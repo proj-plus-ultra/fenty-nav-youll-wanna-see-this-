@@ -8,8 +8,9 @@ module.exports = {
     filename: 'bundle.js',
     path: DIST_DIR
   },
+  mode: 'development',
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         include: SRC_DIR,
