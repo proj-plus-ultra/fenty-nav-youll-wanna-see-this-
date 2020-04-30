@@ -140,7 +140,7 @@ let background = ["https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandwar
 
 let foregrounds = ["https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwd2d3cc6e/hi-res/FB30020_FB0340.jpg?sw=550","https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw548248bb/hi-res/mattifying-foundation-essentials-brush.jpg?sw=550","https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwfb5ef61d/hi-res/pro-filtr-hydrating-foundation-essentials-brush.jpg?sw=550","https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb53e0bd6/hi-res/FB70001.jpg?sw=550","https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwa03d192d/hi-res/mattifying-foundation-essentials-sponge.jpg?sw=550"];
 
-let bgColors = ["#fdcfad","#ffdca6","#fdd1b0","#fdd4b3","#ebc08c","#e2b681","#eac188","#d7a880","#e9ac85","#e0ab87","#e2a978","#fcd6b3","#e0ad7f","#e3ac7f","#f0b98f","#dba47b","#dba47e","#e9ac66","#d3a076","#d99960","#e4ab64","#d6a07b","#c8865b","#c88759","#c88859","#c89163","#d1915f","#cd8e63","#d2955e","#a16c48","#c88e51","#b77b45","#af7946","#c58462","#c6845d","#b57a39","#a6693d","#a35c28","#a56031","#b3733d","#8a522d","#9b582b","#8f5825","#875430","#82472f","#764328","#6c3d24","#64371b","#572b18","#42302a","#fdcfad","#ffdca6","#fdd1b0","#fdd4b3","#ebc08c","#e2b681","#eac188","#d7a880","#e9ac85","#e0ab87","#e2a978","#fcd6b3","#e0ad7f","#e3ac7f","#f0b98f","#dba47b","#dba47e","#e9ac66","#d3a076","#d99960","#e4ab64","#d6a07b","#c8865b","#c88759","#c88859","#c89163","#d1915f","#cd8e63","#d2955e","#a16c48","#c88e51","#b77b45","#af7946","#c58462","#c6845d","#b57a39","#a6693d","#a35c28","#a56031","#b3733d","#8a522d","#9b582b","#8f5825","#875430","#82472f","#764328","#6c3d24","#64371b","#572b18","#42302a","#fdcfad","#ffdca6","#fdd1b0","#fdd4b3","#ebc08c","#e2b681","#eac188","#d7a880","#e9ac85","#e0ab87","#e2a978","#fcd6b3","#e0ad7f","#e3ac7f","#f0b98f","#dba47b","#dba47e","#e9ac66","#d3a076","#d99960","#e4ab64","#d6a07b","#c8865b","#c88759","#c88859","#c89163","#d1915f","#cd8e63","#d2955e","#a16c48","#c88e51","#b77b45","#af7946","#c58462","#c6845d","#b57a39","#a6693d","#a35c28","#a56031","#b3733d","#8a522d","#9b582b","#8f5825","#875430","#82472f","#764328","#6c3d24","#64371b","#572b18","#42302a"];
+let bgColors = ["#fdcfad", "#ffdca6", "#fdd1b0", "#fdd4b3", "#ebc08c", "#e2b681", "#eac188", "#d7a880", "#e9ac85", "#e0ab87", "#e2a978", "#fcd6b3", "#e0ad7f", "#e3ac7f", "#f0b98f", "#dba47b", "#dba47e", "#e9ac66", "#d3a076", "#d99960", "#e4ab64", "#d6a07b", "#c8865b", "#c88759", "#c88859", "#c89163", "#d1915f", "#cd8e63", "#d2955e", "#a16c48", "#c88e51", "#b77b45", "#af7946", "#c58462", "#c6845d", "#b57a39", "#a6693d", "#a35c28", "#a56031", "#b3733d", "#8a522d", "#9b582b", "#8f5825", "#875430", "#82472f", "#764328", "#6c3d24", "#64371b", "#572b18", "#42302a", "#fdcfad", "#ffdca6", "#fdd1b0", "#fdd4b3", "#ebc08c", "#e2b681", "#eac188", "#d7a880", "#e9ac85", "#e0ab87", "#e2a978", "#fcd6b3", "#e0ad7f", "#e3ac7f", "#f0b98f", "#dba47b", "#dba47e", "#e9ac66", "#d3a076", "#d99960", "#e4ab64", "#d6a07b", "#c8865b", "#c88759", "#c88859", "#c89163", "#d1915f", "#cd8e63", "#d2955e", "#a16c48", "#c88e51", "#b77b45", "#af7946", "#c58462", "#c6845d", "#b57a39", "#a6693d", "#a35c28", "#a56031", "#b3733d", "#8a522d", "#9b582b", "#8f5825", "#875430", "#82472f", "#764328", "#6c3d24", "#64371b", "#572b18", "#42302a", "#fdcfad", "#ffdca6", "#fdd1b0", "#fdd4b3", "#ebc08c", "#e2b681", "#eac188", "#d7a880", "#e9ac85", "#e0ab87", "#e2a978", "#fcd6b3", "#e0ad7f", "#e3ac7f", "#f0b98f", "#dba47b", "#dba47e", "#e9ac66", "#d3a076", "#d99960", "#e4ab64", "#d6a07b", "#c8865b", "#c88759", "#c88859", "#c89163", "#d1915f", "#cd8e63", "#d2955e", "#a16c48", "#c88e51", "#b77b45", "#af7946", "#c58462", "#c6845d", "#b57a39", "#a6693d", "#a35c28", "#a56031", "#b3733d", "#8a522d", "#9b582b", "#8f5825", "#875430", "#82472f", "#764328", "#6c3d24", "#64371b", "#572b18", "#42302a"];
 
 var createMockProduct = () =>{
   let product = {};
@@ -174,8 +174,9 @@ console.log(products);
 var seedDb = () =>{
 
   for (let i = 0; i < products.length; i++) {
-    //console.log(products20[i]["name"])
-    console.log(products[i])
+
+    console.log(products[i]);
+
     let query = `INSERT INTO products (name, price, color, category, descrip, rating, background, foreground, bg_color) VALUES ('${products[i]["name"]}', ${products[i]["price"]}, '${products[i]["color"]}', 'foundation', '${products[i]["description"]}', ${products[i]["rating"]}, '${products[i]["background-src"]}', '${products[i]["foreground-src"]}', '${products[i]["bg_color"]}');`;
 
 
@@ -185,7 +186,7 @@ var seedDb = () =>{
 };
 
 seedDb();
-//console.log(products20);
+
 
 
 
