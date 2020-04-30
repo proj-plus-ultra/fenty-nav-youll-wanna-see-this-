@@ -2,8 +2,6 @@ import react from 'react';
 import axios from 'axios';
 
 const searchYT = ({key, productName}, callback) =>{
-  console.log(key);
-  console.log(productName);
   let paramsObj = {
     part: 'snippet',
     channelId: 'UC0HVR9T6oFS3veefhGCGEsw',
