@@ -8,6 +8,7 @@ for (let i = 0; i < colors.length; i++) {
   results.push(hex);
 }
 
+//The part below this is mainly for converting rgb to hex //
 let foo = [];
 
 //gets rid of rgb and makes it just the number
