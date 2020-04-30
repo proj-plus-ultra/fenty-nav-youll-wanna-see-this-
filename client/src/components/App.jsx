@@ -1,5 +1,5 @@
 import React from 'react';
-import getVideos from './getVideos.jsx';
+import getVideos from '../scripts/getVideos.js';
 import axios from 'axios';
 import Videos from './Videos.jsx';
 import Footer from './Footer.jsx';
@@ -14,6 +14,8 @@ class App extends React.Component {
       viedos: [],
       current: ''
     };
+
+    this.getYouTubeVideos = this.getYouTubeVideos.bind(this);
   }
 
   getProducts() {
@@ -21,23 +23,26 @@ class App extends React.Component {
       .then((res) =>{
         console.log('Got Products!', res.data);
         this.setState({
-          products: res.data
-        });
+          products: res.data,
+          current: res.data[0].name
+        }, ()=> this.getYouTubeVideos());
       })
       .catch((err) => console.error(err));
   }
 
   getYouTubeVideos(name) {
-    let key = props.API_key;
-    let toGet = this.state.current;
-    getVideos({key, toGet}, (err, results) =>{
-      if (err) {
-        console.error('Error Getting Videos:', err);
-      } else {
-        this.setState({
-          vidoes: results
-        }, () => console.log('Retrieved Videos!', this.state.vidoes));
-      }
+
+    let param = {
+      key: this.props.API_KEY,
+      productName: this.state.current
+    };
+
+    getVideos(param, (results) =>{
+
+      this.setState({
+        vidoes: results.data.items
+      }, () => console.log('Retrieved Videos!', this.state.vidoes));
+
     });
   }
 
