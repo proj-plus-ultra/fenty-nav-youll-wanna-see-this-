@@ -1,12 +1,12 @@
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  host:'localhost',
-  user:'root',
+  host: 'localhost',
+  user: 'root',
   password: '',
   database: 'fenty'
 
-})
+});
 
 db.connect((err)=>{
   if (err) {
@@ -15,8 +15,7 @@ db.connect((err)=>{
 
   db.query('USE fenty');
 
-
   console.log('Connected to database fenty successfully');
-})
+});
 
 module.exports = db;
