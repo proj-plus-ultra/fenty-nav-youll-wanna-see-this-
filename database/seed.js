@@ -1,3 +1,4 @@
+//change this to however you set up your database connection
 const db = require('./index.js');
 
 let foundation = [
@@ -8,7 +9,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL SKIN TONES.SKIN-SMOOTHING, LIGHT AS AIR LONGWEAR.",
     "rating": 4.5,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwa03d192d/hi-res/mattifying-foundation-essentials-sponge.jpg?sw=550",
     "bg_color": "#d99960"
   },
@@ -19,7 +20,7 @@ let foundation = [
     "color": "Ivory\nWarm",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 4.2,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb3ac0dec/product-bg/bulk-match-stix-trio.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb53e0bd6/hi-res/FB70001.jpg?sw=550",
     "bg_color": "#9b582b"
   },
@@ -30,7 +31,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 3.2,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3ff8aaa5/product-bg/universalfoundationessentials_model.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw5ce4f22d/hi-res/universalfoundationessentialsbrush.jpg?sw=550",
     "bg_color": "#9b582b"
   },
@@ -41,7 +42,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 4.1,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3ff8aaa5/product-bg/universalfoundationessentials_model.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw211af97f/hi-res/universalfoundationessentailssponge.jpg?sw=550",
     "bg_color": "#9b582b"
   },
@@ -53,7 +54,7 @@ let foundation = [
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.",
     "rating": 4.6,
     "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwbaad3c3d/product-bg/FB30006_FB0340_MODEL.jpg?sw=600",
-    "foreground-src": "/on/demandware.static/-/Sites-itemmaster_FNT/default/dw8fdf59b8/hi-res/FB30006_FB0340.jpg?sw=550",
+    "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw8fdf59b8/hi-res/FB30006_FB0340.jpg?sw=550",
     "bg_color": "#9b582b"
   },
   {
@@ -63,7 +64,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 2.1,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw57a2fe37/hi-res/Pro-Filtr-Essentials_brush.jpg?sw=550",
     "bg_color": "#9b582b"
   },
@@ -74,7 +75,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 3.4,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw8fd67f1a/hi-res/Pro-Filtr-Essentials_Sponge.jpg?sw=550",
     "bg_color": "#9b582b"
   },
@@ -85,7 +86,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 3.0,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw1cb95b57/product-bg/hydratingfoundationessentials_model.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwfb5ef61d/hi-res/pro-filtr-hydrating-foundation-essentials-brush.jpg?sw=550",
     "bg_color": "#e4ab64"
   },
@@ -96,7 +97,7 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 3,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
     "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw548248bb/hi-res/mattifying-foundation-essentials-brush.jpg?sw=550",
     "bg_color": "#9b582b"
   },
@@ -107,8 +108,8 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL SKIN TONES.",
     "rating": 4,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
-    "foreground-src": "/on/demandware.static/-/Sites-itemmaster_FNT/default/dwd2d3cc6e/hi-res/FB30020_FB0340.jpg?sw=550",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwbaad3c3d/product-bg/FB30006_FB0340_MODEL.jpg?sw=600",
+    "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwd2d3cc6e/hi-res/FB30020_FB0340.jpg?sw=550",
     "bg_color": "#9b582b"
   },
   {
@@ -118,15 +119,15 @@ let foundation = [
     "color": "#340\nFor tan skin with cool undertones",
     "description": "MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR, LIGHT AS AIR.",
     "rating": 5.0,
-    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw1cb95b57/product-bg/hydratingfoundationessentials_model.jpg?sw=600",
-    "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw04883e00/hi-res/HYDRATINGSPONGE_model.jpg?sw=550",
+    "background-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600",
+    "foreground-src": "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw211af97f/hi-res/universalfoundationessentailssponge.jpg?sw=550",
     "bg_color": "#9b582b"
   }
 ];
 
 
 
-let names = ["HYDRATING", "COMPLEXION", "ESSENTIALS", "PRO FILTR", "Foundation", "Esentials", "MATTIFYING"];
+let names = ["HYDRATING", "COMPLEXION", "ESSENTIALS", "PRO FILTR", "Foundation", "Esentials", "MATTIFYING", "SOFT MATTE"];
 
 let prices = [20, 30, 35, 45, 55, 65, 90, 150];
 
@@ -136,7 +137,7 @@ let descirptions = ["MEDIUM TO FULL COVERAGE FOR ALL.LONGWEAR", "LIGHT AS AIR.",
 
 let ratings = [1.0, 2.0, 2.5, 3.0, 3.5, 4.0, 4.2, 4.5, 5.0];
 
-let background = ["https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw1cb95b57/product-bg/hydratingfoundationessentials_model.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb3ac0dec/product-bg/bulk-match-stix-trio.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3ff8aaa5/product-bg/universalfoundationessentials_model.jpg?sw=600"];
+let background = ["https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw1cb95b57/product-bg/hydratingfoundationessentials_model.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb3ac0dec/product-bg/bulk-match-stix-trio.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3341728d/product-bg/Master-Pro-Filtr-Essentials_BG.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw3ff8aaa5/product-bg/universalfoundationessentials_model.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw9d46d74e/product-bg/FB30020_FB0340_model.jpg?sw=600", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwbaad3c3d/product-bg/FB30006_FB0340_MODEL.jpg?sw=600"];
 
 let foregrounds = ["https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwd2d3cc6e/hi-res/FB30020_FB0340.jpg?sw=550", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dw548248bb/hi-res/mattifying-foundation-essentials-brush.jpg?sw=550", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwfb5ef61d/hi-res/pro-filtr-hydrating-foundation-essentials-brush.jpg?sw=550", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwb53e0bd6/hi-res/FB70001.jpg?sw=550", "https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-itemmaster_FNT/default/dwa03d192d/hi-res/mattifying-foundation-essentials-sponge.jpg?sw=550"];
 
@@ -179,7 +180,7 @@ var seedDb = () =>{
 
     let query = `INSERT INTO products (name, price, color, category, descrip, rating, background, foreground, bg_color) VALUES ('${products[i]["name"]}', ${products[i]["price"]}, '${products[i]["color"]}', 'foundation', '${products[i]["description"]}', ${products[i]["rating"]}, '${products[i]["background-src"]}', '${products[i]["foreground-src"]}', '${products[i]["bg_color"]}');`;
 
-
+    //change this as well if it is different
     db.query(query);
 
   }
