@@ -1,6 +1,6 @@
 import React from 'react';
-import getVideos from '../scripts/getVideos.js';
 import axios from 'axios';
+import getVideos from '../scripts/getVideos.js';
 import Videos from './Videos.jsx';
 import Footer from './Footer.jsx';
 
@@ -24,8 +24,8 @@ class App extends React.Component {
         console.log('Got Products!', res.data);
         this.setState({
           products: res.data,
-          current: res.data[0].name
-        });
+          current: res.data[4].name
+        },() => this.getYouTubeVideos(this.state.current));
       })
       .catch((err) => console.error(err));
   }
@@ -48,7 +48,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.getProducts();
-    this.getYouTubeVideos();
+
   }
 
   render() {
