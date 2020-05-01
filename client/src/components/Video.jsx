@@ -3,7 +3,6 @@ import React from 'react';
 const Video = ({video}) =>(
 
     <div className='entry'>
-      {console.log('Hi from Video')}
 
       <img src={video.snippet.thumbnails.medium.url}></img>
       <div className='subtitle'>
