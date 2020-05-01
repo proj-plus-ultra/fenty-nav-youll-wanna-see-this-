@@ -1,5 +1,6 @@
 .youll-wanna-see-this{
   background-image: url(https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dw479f9072/pdp-content/6734-VIDEO-BACKGROUND-ASSET.jpg);
+  color: #fff;
 }
 
 .footer{
@@ -10,3 +11,24 @@
   right:0;
 }
 
+.content-header{
+  text-align: center;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 20px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 19px;
+  max-width: 300px;
+  padding: 16px 45px 16px 45px;
+  font-family: brown-regular, Questrial, Times, Arial, sans-serif;
+}
+
+.subtitle{
+  font-family: brown-light,Questrial,Times,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: .5px;
+  color: #fff;
+  text-align: center;
+}
