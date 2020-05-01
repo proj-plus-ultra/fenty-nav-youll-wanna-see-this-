@@ -11,7 +11,7 @@ class App extends React.Component {
 
     this.state = {
       products: [],
-      viedos: [],
+      videos: [],
       current: ''
     };
 
@@ -40,8 +40,8 @@ class App extends React.Component {
     getVideos(param, (results) =>{
 
       this.setState({
-        vidoes: results.data.items
-      }, () => console.log('Retrieved Videos!', this.state.vidoes));
+        videos: results.data.items
+      }, () => console.log('Retrieved Videos!', this.state.videos));
 
     });
   }
