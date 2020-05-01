@@ -24,7 +24,7 @@ class App extends React.Component {
         console.log('Got Products!', res.data);
         this.setState({
           products: res.data,
-          current: res.data[4].name
+          current: res.data[14].name
         },() => this.getYouTubeVideos(this.state.current));
       })
       .catch((err) => console.error(err));
@@ -54,7 +54,9 @@ class App extends React.Component {
   render() {
     return (
       <div className = "body">
+        <section className='videoSection'>
         <Videos videos={this.state.videos}/>
+        </section>
         <Footer />
       </div>
     );
