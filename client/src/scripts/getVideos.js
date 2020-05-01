@@ -14,7 +14,6 @@ const searchYT = ({key, productName}, callback) =>{
 
   axios.get('https://www.googleapis.com/youtube/v3/search', {params: paramsObj})
     .then((res) => {
-      console.log('Retrieved Videos Succesfully!', res);
       callback(res);
     })
     .catch((err) => console.error(err));
