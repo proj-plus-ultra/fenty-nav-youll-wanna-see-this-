@@ -25,9 +25,9 @@ let foobar = [];
 for (let i = 0; i < foo.length; i++) {
   let bar = foo[i].map((value)=>{
     value = parseInt(value).toString(16);
-    return (value.length === 1) ? "0" + value : value;
+    return (value.length === 1) ? ' '+ value : value;
   });
-  foobar.push("#" + bar.join(""));
+  foobar.push('#' + bar.join(''));
 }
 
 console.log(JSON.stringify(foobar));
