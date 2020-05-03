@@ -1,28 +1,45 @@
 import React from 'react';
+import ReactDom from 'react-dom';
+import Popup from 'reactjs-popup';
+const buttonSource = 'https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dwbba3103b/homepage/playbutton_mobile.svg';
 
-class Popup extends React.Component{
+
+class VideoPopup extends React.Component{
   constructor(props){
     super(props);
-
-    this.handleClick = this.handleClick.bind(this);
+    this.state = { open: false };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
-  handleClick(){
-    this.props.toggle();
+  openModal() {
+    this.setState({ open: true });
   }
+  closeModal() {
+    this.setState({ open: false });
+  }
+
+
 
   render(){
     return (
-      <div className='popup'>
-      <div className='popup_content'>
-        <span className="close" onClick={this.handleClick}>&times;</span>
-        <p>Test</p>
+      <div>
+         <button className="button" onClick={this.openModal}>
+          Controlled Popup
+        </button>
+
+        <Popup open={this.state.open} closeOnDocumentClick onClose={this.closeModal}>
+          <div className="modal">
+            <iframe frameborder="0"src={`https://www.youtube.com/embed/${this.props.vidId}`} width="640" height="360"></iframe>
+            {this.props.title}
+          </div>
+        </Popup>
       </div>
-    </div>
-    )
+    );
   }
 
 }
 
 
-export default Popup;
+
+export default VideoPopup;
