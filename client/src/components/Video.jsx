@@ -1,22 +1,49 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import VideoPopup from './Popup.jsx'
 const buttonSource = 'https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dwbba3103b/homepage/playbutton_mobile.svg';
 
 
-const Video = ({video}) =>(
+
+class Video extends React.Component{
+  constructor(props){
+    super(props);
+
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+
+  }
+
+  openModal() {
+    this.setState({ open: true });
+  }
+  closeModal() {
+    this.setState({ open: false });
+  }
+
+
+  render(){
+    return (
 
     <div className='entry' >
-      <img src = {buttonSource} className='buttonPlay' ></img>
-      <img src={video.snippet.thumbnails.medium.url} className='thumbnail'></img>
+      {console.log(this.props.video.id.videoId)}
+      <VideoPopup title={this.props.video.snippet.title} vidId = {this.props.video.id.videoId} />
+
+      <img src={this.props.video.snippet.thumbnails.medium.url} className='thumbnail'></img>
       <div className='subtitle'>
-         {video.snippet.title}
+         {this.props.video.snippet.title}
       </div>
-
   </div>
+    );
+  }
+}
 
 
-);
 
 export default Video;
 
 
 //<iframe src={`https://www.youtube.com/embed/${video.id.videoId}`}></iframe>
+
+
+
