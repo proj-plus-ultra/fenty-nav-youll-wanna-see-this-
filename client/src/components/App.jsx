@@ -55,7 +55,7 @@ class App extends React.Component {
     return (
       <div className = "body">
         <section className='videoSection'>
-        <Videos videos={this.state.videos}/>
+          <Videos videos={this.state.videos}/>
         </section>
         <Footer />
       </div>
