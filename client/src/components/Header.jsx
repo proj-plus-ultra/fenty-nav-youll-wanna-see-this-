@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './Nav.jsx';
 
 class Header extends React.Component {
   constructor(props) {
@@ -18,11 +19,7 @@ class Header extends React.Component {
             <a src='#'/>
             <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
           </div>
-          <div className='navContainer'>
-            <nav className='navbar'>
-
-            </nav>
-          </div>
+          <Nav />
         </div>
       </header>
     );
