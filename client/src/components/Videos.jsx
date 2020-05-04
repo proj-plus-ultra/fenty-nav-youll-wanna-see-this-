@@ -9,7 +9,6 @@ const Videos = ({videos}) =>{
       <div className='flexbox'>
       {videos.map((video,i) => <Video key={i} video={video}/>)}
       </div>
-
     </div>
   );
 };

@@ -7,7 +7,7 @@ const searchYT = ({key, productName}, callback) =>{
     channelId: 'UC0HVR9T6oFS3veefhGCGEsw',
     key: key,
     q: productName,
-    maxResults: 5,
+    maxResults: 3,
     type: 'video',
     videoEmbeddable: true
   };
