@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Popup from 'reactjs-popup';
-const buttonSource = 'https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dwbba3103b/homepage/playbutton_mobile.svg';
-
 
 class VideoPopup extends React.Component {
   constructor(props) {
