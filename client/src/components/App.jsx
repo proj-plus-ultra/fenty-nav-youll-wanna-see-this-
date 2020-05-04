@@ -25,7 +25,7 @@ class App extends React.Component {
         this.setState({
           products: res.data,
           current: res.data[14].name
-        },() => this.getYouTubeVideos(this.state.current));
+        }, () => this.getYouTubeVideos(this.state.current));
       })
       .catch((err) => console.error(err));
   }
