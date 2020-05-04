@@ -2,8 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import getVideos from '../scripts/getVideos.js';
 import Videos from './Videos.jsx';
-import Footer from './Footer.jsx';
-
+import Nav from './Nav.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -54,10 +53,10 @@ class App extends React.Component {
   render() {
     return (
       <div className = "body">
+        <Nav />
         <section className='videoSection'>
           <Videos videos={this.state.videos}/>
         </section>
-        <Footer />
       </div>
     );
   }
