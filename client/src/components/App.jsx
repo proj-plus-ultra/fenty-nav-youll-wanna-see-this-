@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import getVideos from '../scripts/getVideos.js';
 import Videos from './Videos.jsx';
-import Nav from './Nav.jsx';
+import Header from './Header.jsx';
 
 class App extends React.Component {
   constructor(props) {
