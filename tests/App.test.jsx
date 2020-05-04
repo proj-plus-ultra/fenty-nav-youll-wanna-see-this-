@@ -5,7 +5,7 @@ import App from '../client/src/components/App';
 
 describe('App Tests', () =>{
   test('should render the app component on the screen', () => {
-    var wrapper = shallow(<App />);
+    let wrapper = shallow(<App />);
     expect(wrapper).toExist();
   });
 });
