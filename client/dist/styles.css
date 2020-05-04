@@ -78,13 +78,25 @@
 
 
 .modal{
-  color: black;
   display: block;
   width: auto;
+
   min-height: 0px;
   max-height: none;
   height: auto;
   padding: 35px 20px;
 }
 
-iframe{}
+.title{
+  color: black;
+  font-family: brown-regular,Questrial,Times,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+}
