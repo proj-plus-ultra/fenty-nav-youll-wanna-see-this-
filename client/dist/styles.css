@@ -100,3 +100,28 @@
 .container{
   width: 100%;
 }
+
+header{
+  background-color: #000;
+  color: #fff;
+  font-family: brown-regular,Questrial,Times,Arial,sans-serif;
+  line-height: 16px;
+}
+
+.logo-img{
+  width: 189px;
+  height: 28px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body{
+  background-color: black;
+}
+
+.logo{
+  z-index: 2000;
+  position: relative;
+  left: auto;
+  text-align: center;
+}
