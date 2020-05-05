@@ -4,9 +4,7 @@ import Nav from './Nav.jsx';
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      navItems: ['SHOP', 'SALE', 'SHADE FINDER', 'RIHANNA', 'CLARA LIONEL FOUNDATION']
-    };
+
   }
 
 
