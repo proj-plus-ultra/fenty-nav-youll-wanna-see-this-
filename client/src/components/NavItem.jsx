@@ -11,8 +11,6 @@ class NavItem extends React.Component {
       <li className='navListItem'>
         {this.props.item}
       </li>
-
-
     );
   }
 

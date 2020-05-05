@@ -1,5 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem.jsx';
+import RightHeader from './RightHeader/RightHeader.jsx';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class Nav extends React.Component {
             </ul>
           </div>
         </nav>
+        <RightHeader />
       </div>
     );
   }
