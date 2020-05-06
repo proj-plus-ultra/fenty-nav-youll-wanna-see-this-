@@ -144,12 +144,15 @@ ul {
 
 }
 
+
+
 li:hover{
   cursor: pointer;
 }
 
 .navContainer{
   padding: 0 20px;
+  margin-right: 57px;
 }
 
 .rightHeader{
@@ -164,6 +167,7 @@ li:hover{
 
 .actImg{
   width: 25px;
+  margin-right: 15px;
 }
 
 .rightList{
@@ -177,3 +181,40 @@ li:hover{
   text-decoration: underline;
 }
 
+.search{
+  margin-right: 15px;
+  height: 40px;
+  width: auto;
+}
+
+.bag{
+  margin-right: 150px;
+  height: 40px;
+  width: auto;
+}
+
+.searchBar{
+  text-align: center;
+  background-color: #000;
+  border-top: 1px solid #454545;
+  margin: 0;
+  height: 110px;
+  clear: both;
+  display: block;
+}
+
+.searchBox{
+  width: 42.5%;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+  height: 88px;
+  margin-top: 19px;
+  font-size: 15px!important;
+  min-height: 10%;
+  font-family: brown-light,Questrial,Times,Arial,sans-serif;
+  text-transform: capitalize;
+  padding-left: 60px;
+}

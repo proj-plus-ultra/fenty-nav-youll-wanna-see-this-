@@ -1,6 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem.jsx';
-import RightHeader from './RightHeader/RightHeader.jsx';
+import RightHeader from './RightHeader.jsx';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -9,8 +9,8 @@ class Nav extends React.Component {
     this.state = {
       navItems: ['SHOP', 'SALE', 'SHADE FINDER', 'RIHANNA', 'CLARA LIONEL FOUNDATION']
     };
-  }
 
+  }
 
   render() {
     return (
@@ -26,7 +26,7 @@ class Nav extends React.Component {
             </ul>
           </div>
         </nav>
-        <RightHeader />
+        <RightHeader showSearch={this.props.showSearch}/>
       </div>
     );
   }
