@@ -26,7 +26,7 @@ class Nav extends React.Component {
             </ul>
           </div>
         </nav>
-        <RightHeader />
+        <RightHeader showSearch={this.props.showSearch}/>
       </div>
     );
   }
