@@ -25,7 +25,7 @@ app.use('/products', (req, res) =>{
   });
 });
 
-app.use('/products/search', (req, res) =>{
+app.use('/search', (req, res) =>{
   dbHelpers.searchProducts(req, (err, results) =>{
     if (err) {
       res.status(404).json(err);
