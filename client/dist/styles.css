@@ -210,11 +210,15 @@ li:hover{
   color: #fff;
   letter-spacing: 3px;
   box-sizing: border-box;
-  height: 88px;
+  height: 50px;
   margin-top: 19px;
   font-size: 15px!important;
-  min-height: 10%;
   font-family: brown-light,Questrial,Times,Arial,sans-serif;
   text-transform: capitalize;
-  padding-left: 60px;
+
+}
+
+.butt{
+  margin-left: -30px;
+  cursor: pointer;
 }
