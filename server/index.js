@@ -25,6 +25,18 @@ app.use('/products', (req, res) =>{
   });
 });
 
+app.use('/products/search', (req, res) =>{
+  dbHelpers.searchProducts(req, (err, results) =>{
+    if (err) {
+      res.status(404).json(err);
+    } else {
+      res.status(201).json(results);
+    }
+  });
+});
+
+//END POINTS//
+
 app.use('/', express.static(path.join(__dirname, '../client/dist')));
 
 app.listen(port, () => console.log(`app listening at http://localhost:${port}`));
