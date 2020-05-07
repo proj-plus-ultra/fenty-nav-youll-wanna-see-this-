@@ -28,9 +28,8 @@ class Search extends React.Component {
   render() {
     return (
       <div className='searchBar'>
-
-        <input type='text' value={this.state.query} onChange={this.handleSearch} className='searchBox'></input>
-
+        <input type='text' value={this.state.query} onChange={this.handleSearch} onClick={()=>this.setState({query: ''})}className='searchBox'></input>
+        <span className='butt' onClick={this.props.closeSearch} style='font'>X</span>
       </div>
     );
   }
