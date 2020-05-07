@@ -7,10 +7,12 @@ class Header extends React.Component {
     super(props);
 
     this.state = {
-      showSearchBar: false
+      showSearchBar: false,
+      showSearchIcon: true
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.closeSearch = this.closeSearch.bind(this);
   }
 
   handleClick() {
@@ -18,6 +20,12 @@ class Header extends React.Component {
 
     this.setState({
       showSearchBar: !this.state.showSearchBar
+    });
+  }
+
+  closeSearch() {
+    this.setState({
+      showSearchBar: false
     });
   }
 
@@ -32,7 +40,7 @@ class Header extends React.Component {
               <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
             </div>
             <Nav showSearch={this.handleClick}/>
-            <Search />
+            <Search closeSearch={this.closeSearch}/>
           </div>
         </header>
       );
