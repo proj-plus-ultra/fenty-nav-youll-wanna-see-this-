@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import SearchResults from './SearchResults.jsx';
 
 class Search extends React.Component {
   constructor(props) {
@@ -8,7 +9,8 @@ class Search extends React.Component {
     this.state = {
       query: 'What Are You Looking For?',
       clicked: false,
-      products: []
+      products: [],
+      searched: false
     };
 
     this.handleSearch = this.handleSearch.bind(this);
@@ -42,8 +44,9 @@ class Search extends React.Component {
       .then((res) =>{
         console.log('Searched:', res.data);
         this.setState({
-          products: res.data
-        });
+          products: res.data,
+          searched: true
+        }, ()=>console.log(this.state.products));
       })
       .catch((err)=>console.error(err));
   }
@@ -56,12 +59,30 @@ class Search extends React.Component {
       paddingLeft: this.state.clicked ? '4px' : '60px'
     };
 
-    return (
-      <div className='searchBar'>
-        <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
-        <span className='butt' onClick={this.props.closeSearch}>X</span>
-      </div>
-    );
+    if (this.state.searched) {
+      return (
+        <div>
+          <div className='searchBar'>
+            <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
+            <span className='butt' onClick={this.props.closeSearch}>X</span>
+          </div>
+
+          <div className='searchContainer'>
+            <ul className='searchList'>
+              {this.state.products.map((product, i) =><SearchResults product={product} key={i}/>) }
+            </ul>
+          </div>
+        </div>
+
+      );
+    } else {
+      return (
+        <div className='searchBar'>
+          <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
+          <span className='butt' onClick={this.props.closeSearch}>X</span>
+        </div>
+      );
+    }
   }
 }
 
