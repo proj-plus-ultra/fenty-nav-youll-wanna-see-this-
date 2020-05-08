@@ -12,8 +12,8 @@ const dbHelpers = {
     });
   },
   searchProducts: (req, callback) =>{
-    console.log('Search from backend:', req.body);
-    let query = `SELECT * FROM products WHERE name LIKE '%${req.body.search}%'`;
+    console.log('Search from backend:', req.query.search);
+    let query = `SELECT * FROM products WHERE name LIKE '%${req.query.search}%'`;
     db.query(query, (err, results) =>{
       if (err) {
         callback(err);
