@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class Search extends React.Component {
   constructor(props) {
@@ -19,6 +20,8 @@ class Search extends React.Component {
     console.log(e.target.value);
     this.setState({
       query: e.target.value
+    }, () => {
+      this.handleSubmit();
     });
   }
 
