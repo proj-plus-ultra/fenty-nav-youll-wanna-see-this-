@@ -53,7 +53,10 @@ class App extends React.Component {
   render() {
     return (
       <div className = "body">
-        <Header />
+        <div className='headerBox'>
+          <Header />
+        </div>
+
         <section className='videoSection'>
           <Videos videos={this.state.videos}/>
         </section>
