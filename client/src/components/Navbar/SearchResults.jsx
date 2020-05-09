@@ -4,31 +4,52 @@ const SearchResults = (props) =>{
   let rowOne = shortened.slice(0, 4);
   let rowTwo = shortened.slice(4);
 
+  let tableStyle = {
+    float: 'left'
+  };
+
+  let imgStyle = {
+    height: '200px',
+    width: 'auto'
+  };
+
   return (
     <table className='searchList'>
-      <tr>
-        {rowOne.map((product, i) =>{
-          return (
-            <td key={i}>
-              <img src={product.foreground}/>
-              {product.name}
-              ${product.price}
-            </td>
-          );
-        })}
-      </tr>
+      <tbody>
+        <tr>
+          {rowOne.map((product, i) =>{
+            return (
+              <td >
+                <div className='tableImg' style={tableStyle}>
+                  <img src={product.foreground} style={imgStyle}/>
+                </div>
+                <div className='tableTxt'>
+                  {product.name}
+                  <br/>
+                 ${product.price}
+                </div>
+              </td>
+            );
+          })}
+        </tr>
 
-      <tr>
-        {rowTwo.map((product, i) =>{
-          return (
-            <td key={i}>
-              <img src={product.foreground}/>
-              {product.name}
-              ${product.price}
-            </td>
-          );
-        })}
-      </tr>
+        <tr>
+          {rowTwo.map((product, i) =>{
+            return (
+              <td >
+                <div className='tableImg' style={tableStyle}>
+                  <img src={product.foreground} style={imgStyle}/>
+                </div>
+                <div className='tableTxt'>
+                  {product.name}
+                  <br/>
+                 ${product.price}
+                </div>
+              </td>
+            );
+          })}
+        </tr>
+      </tbody>
     </table>
 
   );
