@@ -286,27 +286,3 @@ li:hover{
   cursor: pointer;
 }
 
-.searchHolder{
-  padding-left: 25px;
-  width: 29px;
-  height: 29px;
-  margin-top: 10px;
-}
-
-.searchContainer{
-  background-color: white;
-  color: #000;
-  border-bottom: black;
-}
-
-.searchList{
-  display: flex;
-  justify-content:space-around;
-  list-style-type:none;
-
-}
-
-.searchList img{
-  height: 200px;
-  width: auto;
-}
