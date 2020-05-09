@@ -40,8 +40,8 @@ class Header extends React.Component {
               <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
             </div>
             <Nav showSearch={this.handleClick}/>
-            <Search closeSearch={this.closeSearch}/>
           </div>
+          <Search closeSearch={this.closeSearch}/>
         </header>
       );
     } else {

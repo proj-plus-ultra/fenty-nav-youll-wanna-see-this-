@@ -1,14 +1,57 @@
 import React from 'react';
 const SearchResults = (props) =>{
+  let shortened = props.products.slice(0, 8);
+  let rowOne = shortened.slice(0, 4);
+  let rowTwo = shortened.slice(4);
+
+  let tableStyle = {
+    float: 'left'
+  };
+
+  let imgStyle = {
+    height: '200px',
+    width: 'auto'
+  };
+
   return (
-    <li>
-      <div className='searchResults'>
-        <img src={props.product.foreground}/>
-        {props.product.name}
-        <br/>
-        {props.product.price}
-      </div>
-    </li>
+    <table className='searchList'>
+      <tbody>
+        <tr>
+          {rowOne.map((product, i) =>{
+            return (
+              <td >
+                <div className='tableImg' style={tableStyle}>
+                  <img src={product.foreground} style={imgStyle}/>
+                </div>
+                <div className='tableTxt'>
+                  {product.name}
+                  <br/>
+                 ${product.price}
+                </div>
+              </td>
+            );
+          })}
+        </tr>
+
+        <tr>
+          {rowTwo.map((product, i) =>{
+            return (
+              <td >
+                <div className='tableImg' style={tableStyle}>
+                  <img src={product.foreground} style={imgStyle}/>
+                </div>
+                <div className='tableTxt'>
+                  {product.name}
+                  <br/>
+                 ${product.price}
+                </div>
+              </td>
+            );
+          })}
+        </tr>
+      </tbody>
+    </table>
+
   );
 
 };

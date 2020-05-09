@@ -59,6 +59,13 @@ class Search extends React.Component {
       paddingLeft: this.state.clicked ? '4px' : '60px'
     };
 
+    let resultsStyle = {
+      backgroundColor: 'white',
+      color: '#000',
+      borderBottom: '1px solid black',
+      padding: '20px 50px 75px 100px'
+    };
+
     if (this.state.searched) {
       return (
         <div>
@@ -67,10 +74,8 @@ class Search extends React.Component {
             <span className='butt' onClick={this.props.closeSearch}>X</span>
           </div>
 
-          <div className='searchContainer'>
-            <ul className='searchList'>
-              {this.state.products.map((product, i) =><SearchResults product={product} key={i}/>) }
-            </ul>
+          <div className='searchResultsContainer' style={resultsStyle}>
+            <SearchResults products={this.state.products}/>
           </div>
         </div>
 
