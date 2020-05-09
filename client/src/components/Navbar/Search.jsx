@@ -68,9 +68,9 @@ class Search extends React.Component {
           </div>
 
           <div className='searchContainer'>
-            <ul className='searchList'>
-              {this.state.products.map((product, i) =><SearchResults product={product} key={i}/>) }
-            </ul>
+
+            <SearchResults products={this.state.products}/>
+
           </div>
         </div>
 
