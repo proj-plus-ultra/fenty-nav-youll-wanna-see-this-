@@ -1,4 +1,5 @@
 import React from 'react';
+
 const SearchResults = (props) =>{
   let shortened = props.products.slice(0, 8);
   let rowOne = shortened.slice(0, 4);
@@ -14,9 +15,9 @@ const SearchResults = (props) =>{
   };
 
   return (
-    <table className='searchList'>
+    <table className='searchList' style={{borderCollapse: 'separate', borderSpacing: '0 40px'}}>
       <tbody>
-        <tr>
+        <tr style={{cursor: 'pointer'}}>
           {rowOne.map((product, i) =>{
             return (
               <td >
@@ -33,7 +34,7 @@ const SearchResults = (props) =>{
           })}
         </tr>
 
-        <tr>
+        <tr style={{cursor: 'pointer'}}>
           {rowTwo.map((product, i) =>{
             return (
               <td >
