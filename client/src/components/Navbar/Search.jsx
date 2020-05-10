@@ -59,16 +59,25 @@ class Search extends React.Component {
       paddingLeft: this.state.clicked ? '4px' : '60px'
     };
 
+    //padding order is top right bottom left
     let resultsStyle = {
       backgroundColor: 'white',
       color: '#000',
-      borderBottom: '1px solid black',
-      padding: '20px 50px 75px 100px'
+      padding: '1px 50px 2px 110px'
+    };
+
+    let allStyle = {
+      textAlign: 'center',
+      textDecoration: 'underline',
+      borderTop: '1px solid black',
+      backgroundColor: 'white',
+      color: 'black',
+      padding: '30px'
     };
 
     if (this.state.searched) {
       return (
-        <div>
+        <div className='searchWithResults'>
           <div className='searchBar'>
             <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
             <span className='butt' onClick={this.props.closeSearch}>X</span>
@@ -77,13 +86,17 @@ class Search extends React.Component {
           <div className='searchResultsContainer' style={resultsStyle}>
             <SearchResults products={this.state.products}/>
           </div>
+
+          <div className='resultsFooter' style={allStyle}>
+            <strong><h3 style={{cursor: 'pointer'}}>SEE ALL RESULTS</h3></strong>
+          </div>
         </div>
 
       );
     } else {
       return (
         <div className='searchBar'>
-          <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
+          <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick} className='searchBox'/>
           <span className='butt' onClick={this.props.closeSearch}>X</span>
         </div>
       );
