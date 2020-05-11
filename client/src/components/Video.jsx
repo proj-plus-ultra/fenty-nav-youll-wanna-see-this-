@@ -43,7 +43,5 @@ class Video extends React.Component {
 export default Video;
 
 
-//<iframe src={`https://www.youtube.com/embed/${video.id.videoId}`}></iframe>
-
 
 

@@ -33,7 +33,7 @@ class Header extends React.Component {
     if (this.state.showSearchBar) {
       return (
         <header>
-          <div className='headerContainer'>
+          <div className='headerContainer' >
             <div className='logo'>
               {/*TODO: Change src to whatever/wherever the homepage is*/}
               <a src='#'/>

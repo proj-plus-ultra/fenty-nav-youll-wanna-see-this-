@@ -1,37 +1,46 @@
 import React from 'react';
-import NavItem from './NavItem.jsx';
 import RightHeader from './RightHeader.jsx';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
-class Nav extends React.Component {
+class FentyNav extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      navItems: ['SHOP', 'SALE', 'SHADE FINDER', 'RIHANNA', 'CLARA LIONEL FOUNDATION']
-    };
+
 
   }
 
   render() {
     return (
-      <div className='navContainer'>
-        <nav className='navbar'>
-          <div className='navFlexBox'>
-            <ul className='nav-List'>
-              {this.state.navItems.map((item, i) =>{
-                return (
-                  <NavItem item={item} key={i}/>
-                );
-              })}
-            </ul>
-          </div>
-        </nav>
+
+      <div style={{textAlign: 'center', paddingTop: '10px'}}>
+        <Navbar sticky="top" >
+          <nav >
+            <Nav.Link className='navItem'>SHOP</Nav.Link>
+            <Nav.Link className='navItem'>SALE</Nav.Link>
+            <Nav.Link className='navItem'>SHADE FINDER</Nav.Link>
+            <Nav.Link className='navItem'>RIHANNA</Nav.Link>
+            <Nav.Link className='navItem'>CLARA LIONEL FOUNDATION</Nav.Link>
+          </nav>
+        </Navbar>
         <RightHeader showSearch={this.props.showSearch}/>
       </div>
     );
   }
 }
 
-export default Nav;
+export default FentyNav;
 
 
+/*
+ <div className='navFlexBox'>
+            <ul className='nav-List'>
+              <li className='navListItem'>SHOP</li>
+              <li className='navListItem'>SALE</li>
+              <li className='navListItem'>SHADE FINDER</li>
+              <li className='navListItem'>RIHANNA</li>
+              <li className='navListItem'>CLARA LIONEL FOUNDATION</li>
+            </ul>
+          </div>
+*/
