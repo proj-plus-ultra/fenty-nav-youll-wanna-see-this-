@@ -1,7 +1,6 @@
 import React from 'react';
 import RightHeader from './RightHeader.jsx';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import NavItem from './NavItem.jsx';
 
 class FentyNav extends React.Component {
   constructor(props) {
@@ -14,7 +13,6 @@ class FentyNav extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div className='navContainer'>
         <nav className='navbar'>
           <div className='navFlexBox'>
@@ -25,19 +23,6 @@ class FentyNav extends React.Component {
             </ul>
           </div>
         </nav>
-=======
-
-      <div style={{textAlign: 'center', paddingTop: '10px'}}>
-        <Navbar sticky="top" >
-          <nav >
-            <Nav.Link className='navItem'>SHOP</Nav.Link>
-            <Nav.Link className='navItem'>SALE</Nav.Link>
-            <Nav.Link className='navItem'>SHADE FINDER</Nav.Link>
-            <Nav.Link className='navItem'>RIHANNA</Nav.Link>
-            <Nav.Link className='navItem'>CLARA LIONEL FOUNDATION</Nav.Link>
-          </nav>
-        </Navbar>
->>>>>>> 77a11d5b6a2daced30fe10b80eb339f7d18c3b6a
         <RightHeader showSearch={this.props.showSearch}/>
       </div>
     );

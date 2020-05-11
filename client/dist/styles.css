@@ -49,8 +49,6 @@ table {
 }
 /* CSS Reset*/
 
-/*App CSS Below*/
-
 body{
   background-color: white;
 }
@@ -179,7 +177,6 @@ header{
   height: 28px;
   overflow: hidden;
   cursor: pointer;
-
 }
 
 
@@ -190,23 +187,28 @@ header{
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+  text-align: center;
+}
 
-.navItem{
+
+.navListItem{
   display: inline;
-  padding: 10px 34px 0 15px;
+  padding: 10px 15px 0 15px;
   display: inline-block;
   vertical-align: top;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing: 2px;
+
 }
 
-.navItem:hover{
+li:hover{
   cursor: pointer;
-  text-decoration: underline;
 }
 
+.navContainer{
+  padding: 10px 20px;
+  margin-right: 57px;
+}
 
 .rightHeader{
   width: auto;
@@ -230,7 +232,7 @@ header{
   justify-content: center;
 }
 
-.rightHeader:hover{
+li:hover{
   text-decoration: underline;
 }
 
@@ -283,5 +285,3 @@ header{
   margin-left: -30px;
   cursor: pointer;
 }
-
-
