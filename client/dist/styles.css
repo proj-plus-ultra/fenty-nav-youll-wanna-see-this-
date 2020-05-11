@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset*/
+
+body{
+  background-color: white;
+}
+.videoSection{
+  background-image: url(https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dw479f9072/pdp-content/6734-VIDEO-BACKGROUND-ASSET.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.youll-wanna-see-this{
+  color: #fff;
+  padding: 80px 0 80px 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.footer{
+  background-image: url(https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-FENTY-Library/default/dwe00ca532/footer/FOOTER_BG_6_19_17.jpg);
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.content-header{
+  text-align: center;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 20px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-family: brown-regular, Questrial, Times, Arial, sans-serif;
+  padding: 0 0 48px 0;
+  max-width: 420px;
+  font-size: 26px;
+}
+
+.subtitle{
+  font-family: brown-light,Questrial,Times,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: .5px;
+  color: #fff;
+  text-align: center;
+}
+
+.entry{
+  height: 100%;
+  min-height: 1px;
+  width: 362px;
+}
+
+
+.buttonPlay{
+  display: block;
+  margin: 0 auto;
+  top: 100px;
+  right: 30px;
+  position: relative;
+}
+
+.buttonPlay,.thumbnail{
+  cursor: pointer;
+
+}
+
+.buttonPlay:hover{
+  opacity:1; /* how much transparent you want image to be*/
+  filter:alpha(opacity=40); /* browser fix*/
+  -webkit-opacity:0.4; /*vendor prefixes for website browsers*/
+  -moz-opacity:0.4;
+}
+
+
+.modal{
+  display: block;
+  width: auto;
+  min-height: 0px;
+  max-height: none;
+  height: auto;
+  padding: 35px 20px;
+}
+
+.headerContainer{
+  padding: 20px 20px 20px 20px;
+
+}
+
+
+.title{
+  color: black;
+  font-family: brown-regular,Questrial,Times,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+}
+
+header{
+  background-color: #000;
+  color: #fff;
+  font-family: brown-regular,Questrial,Times,Arial,sans-serif;
+  line-height: 16px;
+  transition: all .5s ease;
+  height: auto;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+
+.logo-img{
+  width: 189px;
+  height: 28px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.logo{
+  z-index: 2000;
+  position: relative;
+  left: auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+.navListItem{
+  display: inline;
+  padding: 10px 15px 0 15px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.navContainer{
+  padding: 10px 20px;
+  margin-right: 57px;
+}
+
+.rightHeader{
+  width: auto;
+  position: absolute;
+  right: 100px;
+  top: 55px;
+  margin-top: 0;
+  z-index: 2000;
+
+}
+
+.actImg{
+  width: 25px;
+  margin-right: 15px;
+}
+
+.rightList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+li:hover{
+  text-decoration: underline;
+}
+
+.search{
+  margin-right: 15px;
+  height: 40px;
+  width: auto;
+}
+
+.bag{
+  margin-right: 150px;
+  height: 40px;
+  width: auto;
+}
+
+.searchBar{
+  text-align: center;
+  background-color: #000;
+  border-top: 1px solid #454545;
+  margin: 0;
+  height: 110px;
+  clear: both;
+  display: block;
+}
+
+.searchBar span {
+  font-size: 20px;
+}
+
+.searchBox{
+  background-position: 7px 7px;
+  background-repeat: no-repeat;
+  background-size: 39px;
+  width: 42.5%;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+  height: 50px;
+  margin-top: 19px;
+  font-size: 15px!important;
+  font-family: brown-light,Questrial,Times,Arial,sans-serif;
+  text-transform: capitalize;
+}
+
+
+
+.butt{
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+

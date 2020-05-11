@@ -170,20 +170,27 @@ let mock = createProducts();
 
 //adds 9 randomly generated products to  array of products
 var products = foundation.concat(mock);
-console.log(products);
+
 
 var seedDb = () =>{
 
+  let queries = [];
+
   for (let i = 0; i < products.length; i++) {
 
-    console.log(products[i]);
+
 
     let query = `INSERT INTO products (name, price, color, category, descrip, rating, background, foreground, bg_color) VALUES ('${products[i]["name"]}', ${products[i]["price"]}, '${products[i]["color"]}', 'foundation', '${products[i]["description"]}', ${products[i]["rating"]}, '${products[i]["background-src"]}', '${products[i]["foreground-src"]}', '${products[i]["bg_color"]}');`;
+
+
+
+    //console.log(query);
 
     //change this as well if it is different
     db.query(query);
 
   }
+
 };
 
 seedDb();

@@ -1,9 +1,3 @@
-/**
- * These rules enforce Hack Reactor's style guide.
- * Visit this repo for more information:
- *   https://github.com/hackreactor-labs/eslint-config-hackreactor
- */
-
 module.exports = {
   env: {
     'es6': true
@@ -41,6 +35,7 @@ module.exports = {
     /* Variable declaration */
     'one-var': [1, { 'uninitialized': 'always', 'initialized': 'never' }],
     /* Minuta */
-    'comma-style': [2, 'last']
+    'comma-style': [2, 'last'],
+
   }
 };
