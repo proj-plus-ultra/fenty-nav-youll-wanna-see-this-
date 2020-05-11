@@ -19,11 +19,9 @@ class Nav extends React.Component {
         <nav className='navbar'>
           <div className='navFlexBox'>
             <ul className='nav-List'>
-              {this.state.navItems.map((item, i) =>{
-                return (
-                  <NavItem item={item} key={i}/>
-                );
-              })}
+
+              <NavItem />
+
             </ul>
           </div>
         </nav>
