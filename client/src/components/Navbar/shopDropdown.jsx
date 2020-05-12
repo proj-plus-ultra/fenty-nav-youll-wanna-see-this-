@@ -13,7 +13,9 @@ class shopDropdown extends React.Component {
       fontSize: '13px',
       fontWeight: 'bold',
       width: '100%',
-      height: '100%'
+
+      position: 'absolute',
+      backgroundColor: 'white'
     };
 
     let dd1Style = {
