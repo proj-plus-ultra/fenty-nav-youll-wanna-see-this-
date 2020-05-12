@@ -6,8 +6,6 @@ class FentyNav extends React.Component {
   constructor(props) {
     super(props);
 
-
-
   }
 
 
@@ -16,15 +14,16 @@ class FentyNav extends React.Component {
       <div className='navContainer'>
         <nav className='navbar'>
           <div className='navFlexBox'>
-            <ul className='nav-List'>
+            <ul className='nav-List' style={{textAlign: 'center'}}>
 
-              <NavItem />
+              <NavItem handleShopHover={this.props.handleShopHover}/>
 
             </ul>
           </div>
         </nav>
         <RightHeader showSearch={this.props.showSearch}/>
       </div>
+
     );
   }
 }
