@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav.jsx';
 import Search from './Search.jsx';
+import ShopDropdown from './shopDropdown.jsx';
 
 class Header extends React.Component {
   constructor(props) {
@@ -8,11 +9,24 @@ class Header extends React.Component {
 
     this.state = {
       showSearchBar: false,
-      showSearchIcon: true
+      showSearchIcon: true,
+      showShopDD: false,
+      showRiRiDD: false
     };
 
     this.handleClick = this.handleClick.bind(this);
     this.closeSearch = this.closeSearch.bind(this);
+    this.shopHover = this.shopHover.bind(this);
+  }
+
+  shopHover() {
+    if (this.state.showSearchBar) {
+
+      this.setState({ showSearchBar: false, showShopDD: !this.state.showShopDD});
+
+    } else {
+      this.setState({showShopDD: !this.state.showShopDD});
+    }
   }
 
   handleClick() {
@@ -32,30 +46,38 @@ class Header extends React.Component {
   render() {
     if (this.state.showSearchBar) {
       return (
-        <header>
-          <div className='headerContainer'>
-            <div className='logo'>
-              {/*TODO: Change src to whatever/wherever the homepage is*/}
-              <a src='#'/>
-              <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
+        <div>
+          <header>
+            <div className='headerContainer'>
+              <div className='logo'>
+                {/*TODO: Change src to whatever/wherever the homepage is*/}
+                <a src='#'/>
+                <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
+              </div>
+              <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
             </div>
-            <Nav showSearch={this.handleClick}/>
+          </header>
+          <ShopDropdown isShow={this.state.showShopDD} />
+          <div>
+            <Search closeSearch={this.closeSearch} />
           </div>
-          <Search closeSearch={this.closeSearch}/>
-        </header>
+        </div>
       );
     } else {
       return (
-        <header>
-          <div className='headerContainer'>
-            <div className='logo'>
-              {/*TODO: Change src to whatever/wherever the homepage is*/}
-              <a src='#'/>
-              <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
+        <div>
+          <header>
+            <div className='headerContainer'>
+              <div className='logo'>
+                {/*TODO: Change src to whatever/wherever the homepage is*/}
+                <a src='#'/>
+                <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
+              </div>
+              <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
             </div>
-            <Nav showSearch={this.handleClick}/>
-          </div>
-        </header>
+          </header>
+          <ShopDropdown isShow={this.state.showShopDD} handleHover={this.shopHover}/>
+        </div>
       );
     }
 
