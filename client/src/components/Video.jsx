@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import VideoPopup from './Popup.jsx';
-const buttonSource = 'https://www.fentybeauty.com/on/demandware.static/-/Sites-FENTY-Library/default/dwbba3103b/homepage/playbutton_mobile.svg';
+const buttonSource = 'https://feccapstone.s3-us-west-1.amazonaws.com/playbutton_mobile.svg';
 
 
 
@@ -15,7 +15,7 @@ class Video extends React.Component {
   }
 
   openModal() {
-    this.setState({ open: true });
+    this.setState({ open: !this.state.open });
   }
   closeModal() {
     this.setState({ open: false });

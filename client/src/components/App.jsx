@@ -46,11 +46,18 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    //this.getProducts();
+    this.getProducts();
 
   }
 
   render() {
+
+    let videoStyle = {
+      backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)",
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100%'
+    };
 
     return (
       <div className = "body">
@@ -58,7 +65,7 @@ class App extends React.Component {
           <Header />
         </div>
 
-        <section className='videoSection'>
+        <section className='videoSection' style={videoStyle}>
           <Videos videos={this.state.videos}/>
         </section>
       </div>

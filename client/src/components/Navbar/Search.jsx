@@ -55,7 +55,7 @@ class Search extends React.Component {
 
   render() {
     let style = {
-      backgroundImage: this.state.clicked ? 'none' : 'url(https://i.ibb.co/HFLDpj0/Screen-Shot-2020-05-06-at-8-55-48-PM.png)',
+      backgroundImage: this.state.clicked ? 'none' : 'url(https://feccapstone.s3-us-west-1.amazonaws.com/searchBox_Icon.png)',
       paddingLeft: this.state.clicked ? '4px' : '60px'
     };
 

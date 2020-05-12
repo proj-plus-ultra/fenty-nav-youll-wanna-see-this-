@@ -11,7 +11,14 @@ class shopDropdown extends React.Component {
       padding: '30px 20px 25px 10px',
       letterSpacing: '2px',
       fontSize: '13px',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      width: '100%',
+      height: '100%'
+    };
+
+    let dd1Style = {
+      marginBottom: '10px',
+      fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif'
     };
 
     let shop1 = ['SHOP ALL', 'SHOW NEW', 'BEST SELLERS', 'NEW! CHEEKS OUT COLLECTION', 'COLLECTIONS', 'SALE', 'FOUNDATION SHADE FINDER', 'E-GIFT CARDS'];
@@ -27,7 +34,7 @@ class shopDropdown extends React.Component {
         <ul className='shopDD1' style={{paddingLeft: '300px', textAlign: 'left'}}>
           {shop1.map((item, i) =>{
             return (
-              <li className='dd1' key={i}>{item}</li>
+              <li className='dd1' key={i} style={dd1Style}>{item}</li>
             );
           })}
         </ul>

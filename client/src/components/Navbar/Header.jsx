@@ -52,7 +52,7 @@ class Header extends React.Component {
               <div className='logo'>
                 {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
-                <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
+                <img src="https://feccapstone.s3-us-west-1.amazonaws.com/header.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
               </div>
               <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
             </div>
@@ -71,7 +71,7 @@ class Header extends React.Component {
               <div className='logo'>
                 {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
-                <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
+                <img src="https://feccapstone.s3-us-west-1.amazonaws.com/header.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
               </div>
               <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
             </div>
