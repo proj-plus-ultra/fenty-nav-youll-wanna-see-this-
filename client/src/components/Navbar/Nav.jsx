@@ -1,11 +1,16 @@
 import React from 'react';
-import NavItem from './NavItem.jsx';
 import RightHeader from './RightHeader.jsx';
+import NavItem from './NavItem.jsx';
 
-class Nav extends React.Component {
+class FentyNav extends React.Component {
   constructor(props) {
     super(props);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
   }
 
 
@@ -28,6 +33,17 @@ class Nav extends React.Component {
   }
 }
 
-export default Nav;
+export default FentyNav;
 
 
+/*
+ <div className='navFlexBox'>
+            <ul className='nav-List'>
+              <li className='navListItem'>SHOP</li>
+              <li className='navListItem'>SALE</li>
+              <li className='navListItem'>SHADE FINDER</li>
+              <li className='navListItem'>RIHANNA</li>
+              <li className='navListItem'>CLARA LIONEL FOUNDATION</li>
+            </ul>
+          </div>
+*/
