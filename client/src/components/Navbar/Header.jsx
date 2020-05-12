@@ -42,7 +42,7 @@ class Header extends React.Component {
   render() {
     if (this.state.showSearchBar) {
       return (
-        <div>
+        <div className='header' style={{positon: 'sticky', top: '0'}}>
           <header>
             <div className='headerContainer' style={{padding: '20px 20px 20px 20px'}}>
               <div className='logo'>
@@ -61,7 +61,7 @@ class Header extends React.Component {
       );
     } else {
       return (
-        <div>
+        <div className='header' style={{positon: 'sticky', top: '0'}}>
           <header>
             <div className='headerContainer' style={{padding: '20px 20px 20px 20px'}}>
               <div className='logo'>
