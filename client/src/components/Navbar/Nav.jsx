@@ -20,13 +20,14 @@ class Nav extends React.Component {
           <div className='navFlexBox'>
             <ul className='nav-List'>
 
-              <NavItem />
+              <NavItem handleShopHover={this.props.handleShopHover}/>
 
             </ul>
           </div>
         </nav>
         <RightHeader showSearch={this.props.showSearch}/>
       </div>
+
     );
   }
 }
