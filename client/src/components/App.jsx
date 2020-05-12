@@ -23,11 +23,7 @@ class App extends React.Component {
         console.log('Got Products!', res.data);
         this.setState({
           products: res.data,
-<<<<<<< HEAD
           current: res.data[12].name
-=======
-          current: res.data[19].name
->>>>>>> master
         }, () => this.getYouTubeVideos(this.state.current));
       })
       .catch((err) => console.error(err));

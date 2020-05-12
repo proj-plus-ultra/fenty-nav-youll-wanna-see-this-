@@ -6,11 +6,6 @@ class FentyNav extends React.Component {
   constructor(props) {
     super(props);
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
   }
 
 

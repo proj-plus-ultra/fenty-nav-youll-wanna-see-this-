@@ -46,7 +46,6 @@ class Header extends React.Component {
   render() {
     if (this.state.showSearchBar) {
       return (
-<<<<<<< HEAD
         <div>
           <header>
             <div className='headerContainer'>
@@ -56,14 +55,6 @@ class Header extends React.Component {
                 <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
               </div>
               <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
-=======
-        <header>
-          <div className='headerContainer' >
-            <div className='logo'>
-              {/*TODO: Change src to whatever/wherever the homepage is*/}
-              <a src='#'/>
-              <img src="https://i.ibb.co/1RyTT3n/fentybeauty-logo.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
->>>>>>> master
             </div>
           </header>
           <ShopDropdown isShow={this.state.showShopDD} close={this.shopHover}/>
