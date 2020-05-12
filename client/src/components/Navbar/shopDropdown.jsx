@@ -13,7 +13,6 @@ class shopDropdown extends React.Component {
       fontSize: '13px',
       fontWeight: 'bold',
       width: '100%',
-
       position: 'absolute',
       backgroundColor: 'white'
     };
@@ -41,7 +40,7 @@ class shopDropdown extends React.Component {
           })}
         </ul>
 
-        <div className='faceDDD' style={{position: 'relative', textAlign: 'center', top: '0'}}>
+        <div className='faceDDD' style={{position: 'relative', textAlign: 'center', verticalAlign: 'top'}}>
           <ul className='faceDD' >
             <li>
               <h3>FACE</h3>
