@@ -57,7 +57,7 @@ class Header extends React.Component {
               <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
             </div>
           </header>
-          <ShopDropdown isShow={this.state.showShopDD} />
+          <ShopDropdown isShow={this.state.showShopDD} close={this.shopHover}/>
           <div>
             <Search closeSearch={this.closeSearch} />
           </div>
