@@ -10,7 +10,7 @@ class NavItem extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className='nav-list' style={{letterSpacing: '1px'}}>
         <li className='navListItem' onMouseEnter={this.props.handleShopHover} >SHOP</li>
         <li className='navListItem'>SALE</li>
         <li className='navListItem'>SHADE FINDER</li>
