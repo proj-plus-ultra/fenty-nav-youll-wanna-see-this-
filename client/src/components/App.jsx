@@ -52,13 +52,20 @@ class App extends React.Component {
 
   render() {
 
+    let videoStyle = {
+      backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)",
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100%'
+    };
+
     return (
       <div className = "body">
         <div className='headerBox'>
           <Header />
         </div>
 
-        <section className='videoSection' style={{backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)"}}>
+        <section className='videoSection' style={videoStyle}>
           <Videos videos={this.state.videos}/>
         </section>
       </div>
