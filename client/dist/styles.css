@@ -48,13 +48,7 @@ table {
 	border-spacing: 0;
 }
 /* CSS Reset*/
-
-body{
-  background-color: white;
-  font-family: brown-regular,Questrial,Times,Arial,sans-serif;
-  list-style-type: none;
-}
-
+/* TODO: Move all css that can be in line to perspective components*/
 .footer{
   background-image: url(https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-FENTY-Library/default/dwe00ca532/footer/FOOTER_BG_6_19_17.jpg);
   position:absolute;
