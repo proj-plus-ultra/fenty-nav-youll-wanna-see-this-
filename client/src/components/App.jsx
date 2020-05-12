@@ -56,7 +56,9 @@ class App extends React.Component {
       backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)",
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      width: '100%'
+      width: '100%',
+      zIndex: '-1',
+      position: 'relative'
     };
 
     return (
