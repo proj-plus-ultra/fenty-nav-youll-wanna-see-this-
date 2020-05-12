@@ -11,7 +11,7 @@ class NavItem extends React.Component {
 
     return (
       <div>
-        <li className='navListItem' onMouseEnter={this.props.handleShopHover} onMouseLeave={this.props.handleShopHover}>SHOP</li>
+        <li className='navListItem' onMouseEnter={this.props.handleShopHover} >SHOP</li>
         <li className='navListItem'>SALE</li>
         <li className='navListItem'>SHADE FINDER</li>
         <li className='navListItem'>RIHANNA</li>
