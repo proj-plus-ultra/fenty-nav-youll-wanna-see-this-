@@ -58,7 +58,7 @@ class App extends React.Component {
       backgroundRepeat: 'no-repeat',
       width: '100%',
       zIndex: '-1',
-      position: 'relative'
+      position: 'fixed'
     };
 
     return (

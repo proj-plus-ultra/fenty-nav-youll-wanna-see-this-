@@ -25,7 +25,7 @@ class Video extends React.Component {
   render() {
     return (
 
-      <div className='entry' onClick={this.openModal} >
+      <div className='entry' onClick={this.openModal}>
 
         <VideoPopup title={this.props.video.snippet.title} vidId = {this.props.video.id.videoId} isOpen={this.state.open} open={this.openModal} close={this.closeModal}/>
         <img src={buttonSource} className='buttonPlay'></img>
