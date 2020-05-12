@@ -6,20 +6,22 @@ class shopDropdown extends React.Component {
   }
 
   render() {
-    let shop1Style = {
+    let shopStyle = {
       display: this.props.isShow ? 'block' : 'none',
       padding: '30px 20px 25px 10px',
       letterSpacing: '2px',
       fontSize: '13px',
-      fontWeight: 'bold',
       width: '100%',
       position: 'absolute',
-      backgroundColor: 'white'
+      backgroundColor: 'white',
     };
 
     let dd1Style = {
       marginBottom: '10px',
-      fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif'
+      fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif',
+      fontWeight: 'bold',
+      paddingBottom: '12px'
+
     };
 
     let shop1 = ['SHOP ALL', 'SHOW NEW', 'BEST SELLERS', 'NEW! CHEEKS OUT COLLECTION', 'COLLECTIONS', 'SALE', 'FOUNDATION SHADE FINDER', 'E-GIFT CARDS'];
@@ -29,25 +31,67 @@ class shopDropdown extends React.Component {
     let lip = ['Lip Gloss', 'Lipstick', 'Lip Care'];
     let eye = [ 'BROW', 'BODY'];
     let misc = ['MINIS + Travel Size', 'VALUE SETS + VAULTS', 'BRUSHES + TOOLS', 'ACCESSORIES', 'EXCLUSIVES', "RIHANNA's FAVES"];
+
+
     return (
 
-      <div className='showShopDD' style={shop1Style} onMouseLeave={this.props.close}>
-        <ul className='shopDD1' style={{paddingLeft: '300px', textAlign: 'left'}}>
-          {shop1.map((item, i) =>{
-            return (
-              <li className='dd1' key={i} style={dd1Style}>{item}</li>
-            );
-          })}
-        </ul>
+      <div className='showShopDD' style={shopStyle} onMouseLeave={this.props.close}>
 
-        <div className='faceDDD' style={{position: 'relative', textAlign: 'center', verticalAlign: 'top'}}>
-          <ul className='faceDD' >
+        <div style={{position: 'relative', float: 'left', paddingLeft: '300px'}}>
+
+          <ul className='shopDD1' style={{}}>
+            {shop1.map((item, i) =>{
+              return (
+                <li className='dd1' key={i} style={dd1Style}>{item}</li>
+              );
+            })}
+          </ul>
+        </div>
+
+
+        <div className = 'list-two' style={{position: 'relative', float: 'left', paddingLeft: '100px' }}>
+          <ul className='faceDD' style={{ }}>
             <li>
-              <h3>FACE</h3>
+              <strong><h3 style={{paddingBottom: '15px'}}>FACE</h3></strong>
               <ul>
                 {face.map((item, i) =>{
                   return (
-                    <li className='faceElem' key={i} style={{fontSize: '10px'}}>{item}</li>
+                    <li className='faceElem' key={i} style={{fontSize: '10px', paddingBottom: '17px'}}>{item}</li>
+                  );
+                })}
+              </ul>
+            </li>
+            <li style={{paddingTop: '30px'}}>
+              <strong><h3 style={{paddingBottom: '15px'}} >CHEEK</h3></strong>
+              <ul className='cheekDD'>
+                {cheek.map((item, i) =>{
+                  return (
+                    <li className='cheek' key={i} style={{fontSize: '10px', paddingBottom: '17px'}}>{item}</li>
+                  );
+                })}
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div className = 'list-three' style={{position: 'relative', float: 'left', paddingLeft: '100px' }}>
+          <ul className='lipDD'>
+            <li>
+              <strong><h3 style={{paddingBottom: '15px'}}>FACE</h3></strong>
+              <ul>
+                {lip.map((item, i) =>{
+                  return (
+                    <li className='lip' key={i} style={{fontSize: '10px', paddingBottom: '23px'}}>{item}</li>
+                  );
+                })}
+              </ul>
+            </li>
+            <li style={{paddingTop: '30px'}}>
+              <strong><h3 style={{paddingBottom: '15px'}} >CHEEK</h3></strong>
+              <ul className='eyeDD'>
+                {eye.map((item, i) =>{
+                  return (
+                    <li className='cheek' key={i} style={{fontSize: '10px', paddingBottom: '17px'}}>{item}</li>
                   );
                 })}
               </ul>
@@ -64,3 +108,4 @@ class shopDropdown extends React.Component {
 
 
 export default shopDropdown;
+
