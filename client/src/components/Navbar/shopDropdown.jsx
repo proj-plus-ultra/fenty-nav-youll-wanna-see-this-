@@ -37,7 +37,7 @@ class shopDropdown extends React.Component {
 
       <div className='showShopDD' style={shopStyle} onMouseLeave={this.props.close}>
 
-        <div style={{position: 'relative', float: 'left', paddingLeft: '300px'}}>
+        <div className='list-one' style={{position: 'relative', float: 'left', paddingLeft: '300px'}}>
 
           <ul className='shopDD1' style={{}}>
             {shop1.map((item, i) =>{
@@ -77,7 +77,7 @@ class shopDropdown extends React.Component {
         <div className = 'list-three' style={{position: 'relative', float: 'left', paddingLeft: '100px' }}>
           <ul className='lipDD'>
             <li>
-              <strong><h3 style={{paddingBottom: '15px'}}>FACE</h3></strong>
+              <strong><h3 style={{paddingBottom: '15px'}}>LIP</h3></strong>
               <ul>
                 {lip.map((item, i) =>{
                   return (
@@ -87,7 +87,7 @@ class shopDropdown extends React.Component {
               </ul>
             </li>
             <li style={{paddingTop: '30px'}}>
-              <strong><h3 style={{paddingBottom: '15px'}} >CHEEK</h3></strong>
+              <strong><h3 style={{paddingBottom: '15px'}} >EYE</h3></strong>
               <ul className='eyeDD'>
                 {eye.map((item, i) =>{
                   return (
@@ -99,6 +99,23 @@ class shopDropdown extends React.Component {
           </ul>
         </div>
 
+        <div className = 'list-three' style={{position: 'relative', float: 'left', paddingLeft: '100px' }}>
+          <ul className='faceDD'>
+            {misc.map((item, i)=>{
+              return (
+                <li className='misc' key={i} style={{paddingBottom: '15px'}}><h3>{item}</h3></li>
+              );
+            })}
+          </ul>
+        </div>
+
+
+        <div className='shop-pic' style={{position: 'relative', float: 'left', paddingLeft: '100px'}}>
+          <img src='https://feccapstone.s3-us-west-1.amazonaws.com/shop-picture.jpg' style={{cursor: 'pointer'}}/>
+          <h3>NEW!</h3> <br/>
+          <h3>CHEEKS OUT</h3> <br/>
+          <h3>FREESTYLE CREAM BLUSH</h3> <br/>
+        </div>
       </div>
 
     );
