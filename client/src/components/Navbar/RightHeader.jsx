@@ -6,9 +6,6 @@ class RightHeader extends React.Component {
   }
 
 
-
-
-
   render() {
 
     return (
