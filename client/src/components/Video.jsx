@@ -15,7 +15,7 @@ class Video extends React.Component {
   }
 
   openModal() {
-    this.setState({ open: true });
+    this.setState({ open: !this.state.open });
   }
   closeModal() {
     this.setState({ open: false });
