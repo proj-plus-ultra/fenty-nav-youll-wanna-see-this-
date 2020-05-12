@@ -51,6 +51,7 @@ table {
 
 body{
   background-color: white;
+  font-family: brown-regular,Questrial,Times,Arial,sans-serif;
 }
 @import url(//db.onlinewebfonts.com/c/123c7e674188c97798dd39cd41ff2d85?family=Brown+Regular);
 
@@ -284,6 +285,7 @@ li:hover{
 .butt{
   margin-left: -30px;
   cursor: pointer;
+  color: white;
 }
 
 .dd1{
@@ -291,7 +293,3 @@ li:hover{
   font: brown-regular,Questrial,Times,Arial,sans-serif;;
 }
 
-.showShopDD {
-  width: 100%;
-  height: 100%;
-}
