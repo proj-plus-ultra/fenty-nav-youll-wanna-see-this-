@@ -6,10 +6,6 @@ class Nav extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      navItems: ['SHOP', 'SALE', 'SHADE FINDER', 'RIHANNA', 'CLARA LIONEL FOUNDATION']
-    };
-
   }
 
 
@@ -18,7 +14,7 @@ class Nav extends React.Component {
       <div className='navContainer'>
         <nav className='navbar'>
           <div className='navFlexBox'>
-            <ul className='nav-List'>
+            <ul className='nav-List' style={{textAlign: 'center'}}>
 
               <NavItem handleShopHover={this.props.handleShopHover}/>
 
