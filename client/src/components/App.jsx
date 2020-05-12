@@ -46,7 +46,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    //this.getProducts();
+    this.getProducts();
 
   }
 
@@ -58,7 +58,7 @@ class App extends React.Component {
           <Header />
         </div>
 
-        <section className='videoSection'>
+        <section className='videoSection' style={{backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)"}}>
           <Videos videos={this.state.videos}/>
         </section>
       </div>
