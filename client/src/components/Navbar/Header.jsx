@@ -20,13 +20,9 @@ class Header extends React.Component {
   }
 
   shopHover() {
-    if (this.state.showSearchBar) {
 
-      this.setState({ showSearchBar: false, showShopDD: !this.state.showShopDD});
+    this.setState({showShopDD: !this.state.showShopDD});
 
-    } else {
-      this.setState({showShopDD: !this.state.showShopDD});
-    }
   }
 
   handleClick() {
@@ -48,7 +44,7 @@ class Header extends React.Component {
       return (
         <div>
           <header>
-            <div className='headerContainer'>
+            <div className='headerContainer' style={{padding: '20px 20px 20px 20px'}}>
               <div className='logo'>
                 {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
@@ -67,7 +63,7 @@ class Header extends React.Component {
       return (
         <div>
           <header>
-            <div className='headerContainer'>
+            <div className='headerContainer' style={{padding: '20px 20px 20px 20px'}}>
               <div className='logo'>
                 {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
