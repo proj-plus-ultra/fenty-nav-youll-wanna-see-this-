@@ -25,16 +25,16 @@ const riDropDown = (props) =>{
     <div className='rihana-dropdown' style={style} onMouseLeave={props.close}>
       <div className='rihanna-dropdown-image' style={{position: 'relative', float: 'left', paddingLeft: '625px', fontWeight: '900', fontSize: '12px', textAlign: 'center'}}>
         <img src='https://feccapstone.s3-us-west-1.amazonaws.com/rih_dropdown-menu.jpg' style={{paddingBottom: '10px'}}/>
-        <bold>
-          <h1>GET RIHANNA'S</h1>
-          <h1>LOOK</h1>
-        </bold>
+
+        <h1>GET RIHANNA'S</h1>
+        <h1>LOOK</h1>
+
       </div>
       <div className='rihanna-dropdown-list' style={{position: 'relative', float: 'left', paddingLeft: '100px' }}>
         <ul className='list-one'>
           {listOne.map((item, i) =>{
             return (
-              <h1><li className='ri-DD-list-one' key={i} style={{paddingBottom: '15px', fontSize: '12px'}}>{item}</li></h1>
+              <li className='ri-DD-list-one' key={i} style={{paddingBottom: '15px', fontSize: '12px'}}>{item}</li>
             );
           })}
         </ul>

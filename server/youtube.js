@@ -1,11 +1,11 @@
-import react from 'react';
-import axios from 'axios';
+const axios = require('axios');
+const KEY = process.env.KEY || require('./config.js');
 
-const searchYT = ({key, productName}, callback) =>{
+const searchYT = (productName, callback) =>{
   let paramsObj = {
     part: 'snippet',
     channelId: 'UC0HVR9T6oFS3veefhGCGEsw',
-    key: key,
+    key: KEY,
     q: productName,
     maxResults: 3,
     type: 'video',
@@ -14,10 +14,10 @@ const searchYT = ({key, productName}, callback) =>{
 
   axios.get('https://www.googleapis.com/youtube/v3/search', {params: paramsObj})
     .then((res) => {
-      callback(res);
+      console.log('response from youtube:', res.data);
+      callback(res.data);
     })
     .catch((err) => console.error(err));
 };
 
-
-export default searchYT;
+module.exports = searchYT;
