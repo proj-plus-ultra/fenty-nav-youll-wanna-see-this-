@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import Navbar from './components/Navbar.jsx';
+import VideoSection from './components/VideoSection.jsx';
 
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Navbar />, document.getElementById('navbar'));
+
+ReactDOM.render(<VideoSection />, document.getElementById('videoSection'));

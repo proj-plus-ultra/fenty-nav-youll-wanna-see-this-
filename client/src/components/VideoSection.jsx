@@ -1,10 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
-import Videos from './Videos.jsx';
-import Header from './Navbar/Header.jsx';
-
-class App extends React.Component {
+import Videos from './Videos/Videos.jsx';
+class VideoSection extends React.Component {
   constructor(props) {
     super(props);
 
@@ -13,10 +11,8 @@ class App extends React.Component {
       videos: [],
       current: ''
     };
-
     this.getYouTubeVideos = this.getYouTubeVideos.bind(this);
   }
-
   getProducts() {
     axios.get('/products')
       .then((res) =>{
@@ -43,7 +39,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    //this.getProducts();
+    this.getProducts();
   }
 
   render() {
@@ -58,26 +54,12 @@ class App extends React.Component {
       position: 'fixed'
     };
 
-    let bodyStyle = {
-      backgroundColor: 'white',
-      fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif',
-      listStyleType: 'none'
-    };
-
     return (
-      <div className = "nav-videoSection" style={bodyStyle}>
-        <div className='headerBox'>
-          <Header />
-        </div>
-
-        <div className='videoSection' style={videoStyle}>
-          <Videos videos={this.state.videos}/>
-        </div>
+      <div className='videoSection' style={videoStyle}>
+        <Videos videos={this.state.videos}/>
       </div>
     );
   }
-
-
 }
 
-export default App;
+export default VideoSection;
