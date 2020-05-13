@@ -160,7 +160,7 @@ var createMockProduct = () =>{
 
 const createProducts = () => {
   let productsArr = [];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 90; i++) {
     productsArr.push(createMockProduct());
   }
   return productsArr;
