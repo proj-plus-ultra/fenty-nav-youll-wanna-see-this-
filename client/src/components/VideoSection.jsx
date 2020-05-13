@@ -17,9 +17,10 @@ class VideoSection extends React.Component {
     axios.get('/products')
       .then((res) =>{
         console.log('Got Products!', res.data);
+        let randomProduct = Math.floor(Math.random() * res.data.length);
         this.setState({
           products: res.data,
-          current: res.data[12].name
+          current: res.data[randomProduct].name
         }, () => this.getYouTubeVideos(this.state.current));
       })
       .catch((err) => console.error(err));
