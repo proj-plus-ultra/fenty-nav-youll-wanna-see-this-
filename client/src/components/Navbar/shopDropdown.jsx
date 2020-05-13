@@ -8,7 +8,7 @@ class shopDropdown extends React.Component {
   render() {
     let shopStyle = {
       display: this.props.isShow ? 'block' : 'none',
-      padding: '30px 20px 25px 10px',
+      padding: '50px 20px 25px 10px',
       letterSpacing: '2px',
       fontSize: '13px',
       width: '100%',
@@ -112,9 +112,9 @@ class shopDropdown extends React.Component {
 
         <div className='shop-pic' style={{position: 'relative', float: 'left', paddingLeft: '100px'}}>
           <img src='https://feccapstone.s3-us-west-1.amazonaws.com/shop-picture.jpg' style={{cursor: 'pointer'}}/>
-          <h3>NEW!</h3> <br/>
-          <h3>CHEEKS OUT</h3> <br/>
-          <h3>FREESTYLE CREAM BLUSH</h3> <br/>
+          <h3 style={{paddingLeft: '25%'}}>NEW!</h3> <br/>
+          <h3 style={{paddingLeft: '14%'}}>CHEEKS OUT</h3> <br/>
+          <h3 style={{paddingLeft: '8%'}}>FREESTYLE CREAM BLUSH</h3> <br/>
         </div>
       </div>
 

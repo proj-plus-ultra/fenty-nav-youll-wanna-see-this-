@@ -19,7 +19,6 @@ const Videos = ({videos}) =>{
   return (
     <div className="youll-wanna-see-this" style={style}>
       <h3 className='content-header'>YOU'LL WANNA SEE THIS</h3>
-      {console.log('From component', videos)}
       <div className='videos-container' style={videoDisplayStyle}>
         {videos.map((video, i) => <Video key={i} video={video}/>)}
       </div>

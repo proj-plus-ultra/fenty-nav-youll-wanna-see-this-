@@ -16,7 +16,7 @@ class FentyNav extends React.Component {
           <div className='navFlexBox'>
             <ul className='nav-List' style={{textAlign: 'center'}}>
 
-              <NavItem handleShopHover={this.props.handleShopHover}/>
+              <NavItem handleShopHover={this.props.handleShopHover} handleRiHover={this.props.handleRiHover}/>
 
             </ul>
           </div>
@@ -30,15 +30,3 @@ class FentyNav extends React.Component {
 
 export default FentyNav;
 
-
-/*
- <div className='navFlexBox'>
-            <ul className='nav-List'>
-              <li className='navListItem'>SHOP</li>
-              <li className='navListItem'>SALE</li>
-              <li className='navListItem'>SHADE FINDER</li>
-              <li className='navListItem'>RIHANNA</li>
-              <li className='navListItem'>CLARA LIONEL FOUNDATION</li>
-            </ul>
-          </div>
-*/
