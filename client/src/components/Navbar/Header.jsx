@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './Nav.jsx';
 import Search from './Search.jsx';
 import ShopDropdown from './shopDropdown.jsx';
+import RiDropdown from './rihanaDropdown.jsx';
 
 class Header extends React.Component {
   constructor(props) {
@@ -17,12 +18,20 @@ class Header extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.closeSearch = this.closeSearch.bind(this);
     this.shopHover = this.shopHover.bind(this);
+    this.rihanaHover = this.rihanaHover.bind(this);
   }
 
   shopHover() {
 
+
     this.setState({showShopDD: !this.state.showShopDD});
 
+  }
+
+  rihanaHover() {
+    console.log('Works');
+
+    this.setState({showRiRiDD: !this.state.showRiRiDD});
   }
 
   handleClick() {
@@ -50,10 +59,11 @@ class Header extends React.Component {
                 <a src='#'/>
                 <img src="https://feccapstone.s3-us-west-1.amazonaws.com/header.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
               </div>
-              <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
+              <Nav showSearch={this.handleClick} handleShopHover={this.shopHover} handleRiHover={this.rihanaHover}/>
             </div>
           </header>
           <ShopDropdown isShow={this.state.showShopDD} close={this.shopHover}/>
+          <RiDropdown show={this.state.showRiRiDD} close={this.rihanaHover}/>
           <div>
             <Search closeSearch={this.closeSearch} />
           </div>
@@ -69,10 +79,11 @@ class Header extends React.Component {
                 <a src='#'/>
                 <img src="https://feccapstone.s3-us-west-1.amazonaws.com/header.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
               </div>
-              <Nav showSearch={this.handleClick} handleShopHover={this.shopHover}/>
+              <Nav showSearch={this.handleClick} handleShopHover={this.shopHover} handleRiHover={this.rihanaHover}/>
             </div>
           </header>
           <ShopDropdown isShow={this.state.showShopDD} handleHover={this.shopHover}/>
+          <RiDropdown show={this.state.showRiRiDD}/>
         </div>
       );
     }
