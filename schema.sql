@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS fenty;
+DROP DATABASE IF EXISTS fenty_nav_videos;
 
-CREATE DATABASE fenty;
+CREATE DATABASE fenty_nav_videos;
 
-USE fenty;
+USE fenty_nav_videos;
 
 CREATE TABLE IF NOT EXISTS products (
   id INT AUTO_INCREMENT primary key,
