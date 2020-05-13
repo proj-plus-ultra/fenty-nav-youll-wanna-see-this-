@@ -23,9 +23,14 @@ class Video extends React.Component {
 
 
   render() {
+    let entryStyle = {
+      height: '100%',
+      minHeight: '1px',
+      width: '362px'
+    };
     return (
 
-      <div className='entry' onClick={this.openModal}>
+      <div className='entry' onClick={this.openModal} style={entryStyle}>
 
         <VideoPopup title={this.props.video.snippet.title} vidId = {this.props.video.id.videoId} isOpen={this.state.open} open={this.openModal} close={this.closeModal}/>
         <img src={buttonSource} className='buttonPlay'></img>
