@@ -63,10 +63,7 @@ class Header extends React.Component {
             </div>
           </header>
           <ShopDropdown isShow={this.state.showShopDD} close={this.shopHover}/>
-
           <RiDropdown show={this.state.showRiRiDD} close={this.rihanaHover}/>
-
-
           <div>
             <Search closeSearch={this.closeSearch} />
           </div>
