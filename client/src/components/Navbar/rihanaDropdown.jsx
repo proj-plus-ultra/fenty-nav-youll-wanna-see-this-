@@ -9,8 +9,9 @@ const riDropDown = (props) =>{
     position: 'absolute',
     backgroundColor: 'white',
   };
+
   return (
-    <div className='rihana-dropdown' style={style} onMouseOut={props.close}>
+    <div className='rihana-dropdown' style={style} onMouseLeave={props.close}>
       rihana
     </div>
 

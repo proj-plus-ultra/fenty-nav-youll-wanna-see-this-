@@ -31,7 +31,7 @@ class Header extends React.Component {
   rihanaHover() {
     console.log('Works');
 
-    this.setState({showRiRiDD: !this.state.showRiRiDD});
+    this.setState({showRiRiDD: !this.state.showRiRiDD}, ()=>console.log(this.state.showRiRiDD));
   }
 
   handleClick() {
@@ -63,7 +63,10 @@ class Header extends React.Component {
             </div>
           </header>
           <ShopDropdown isShow={this.state.showShopDD} close={this.shopHover}/>
+
           <RiDropdown show={this.state.showRiRiDD} close={this.rihanaHover}/>
+
+
           <div>
             <Search closeSearch={this.closeSearch} />
           </div>
@@ -82,8 +85,8 @@ class Header extends React.Component {
               <Nav showSearch={this.handleClick} handleShopHover={this.shopHover} handleRiHover={this.rihanaHover}/>
             </div>
           </header>
-          <ShopDropdown isShow={this.state.showShopDD} handleHover={this.shopHover}/>
-          <RiDropdown show={this.state.showRiRiDD}/>
+          <ShopDropdown isShow={this.state.showShopDD} close={this.shopHover}/>
+          <RiDropdown show={this.state.showRiRiDD} close={this.rihanaHover}/>
         </div>
       );
     }

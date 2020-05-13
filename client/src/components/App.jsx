@@ -46,12 +46,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getProducts();
+    //this.getProducts();
 
   }
 
   render() {
 
+    //z-index and position: fixed lets the drop down menu appear over the videos without conflicts
     let videoStyle = {
       backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)",
       backgroundSize: 'cover',
@@ -61,15 +62,21 @@ class App extends React.Component {
       position: 'fixed'
     };
 
+    let bodyStyle = {
+      backgroundColor: 'white',
+      fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif',
+      listStyleType: 'none'
+    };
+
     return (
-      <div className = "body">
+      <div className = "body" style={bodyStyle}>
         <div className='headerBox'>
           <Header />
         </div>
 
-        <section className='videoSection' style={videoStyle}>
+        <div className='videoSection' style={videoStyle}>
           <Videos videos={this.state.videos}/>
-        </section>
+        </div>
       </div>
     );
   }
