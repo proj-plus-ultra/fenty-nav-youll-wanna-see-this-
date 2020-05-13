@@ -50,7 +50,7 @@ const riDropDown = (props) =>{
         <ul className='list-three'>
           {listThree.map((item, i) =>{
             return (
-              <li className='ri-dd-list-threee' key={i} style={{paddingBottom: '10px', fontSize: '12px'}}>{item}</li>
+              <li className='ri-dd-list-three' key={i} style={{paddingBottom: '10px', fontSize: '12px'}}>{item}</li>
             );
           })}
         </ul>

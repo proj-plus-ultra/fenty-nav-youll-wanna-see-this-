@@ -37,7 +37,7 @@ class App extends React.Component {
         console.log('Sent request to backend and received:', res.data);
         this.setState({
           videos: res.data.items
-        }, () => console.log('Retrieved Videos!', this.state.videos));
+        });
       })
       .catch((err)=> console.error(err));
   }

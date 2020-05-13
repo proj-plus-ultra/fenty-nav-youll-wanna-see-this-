@@ -77,7 +77,6 @@ table {
 
 .buttonPlay,.thumbnail{
   cursor: pointer;
-
 }
 
 .buttonPlay:hover{
@@ -170,9 +169,7 @@ li:hover{
 
 }
 
-li:hover{
-  text-decoration: underline;
-}
+
 
 .searchBar{
   text-align: center;
@@ -212,3 +209,34 @@ li:hover{
   color: white;
 }
 
+.navListItem:hover{
+  text-decoration: underline;
+}
+
+.dd1:hover{
+  text-decoration: underline;
+}
+
+.faceElem:hover{
+  text-decoration: underline;
+}
+
+h3:hover{
+  text-decoration: underline;
+}
+
+.cheek:hover{
+  text-decoration: underline;
+}
+
+.lip:hover{
+  text-decoration: underline;
+}
+
+.ri-DD-list-one:hover,.ri-dd-list-two:hover,.ri-dd-list-three:hover{
+  text-decoration: underline;
+}
+
+h1:hover{
+  text-decoration: underline;
+}
