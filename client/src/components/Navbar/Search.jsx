@@ -54,6 +54,9 @@ class Search extends React.Component {
 
 
   render() {
+    //https://stackoverflow.com/questions/2006134/float-a-div-above-page-content
+    //how to have a div appear over a page
+
     let style = {
       backgroundImage: this.state.clicked ? 'none' : 'url(https://feccapstone.s3-us-west-1.amazonaws.com/searchBox_Icon.png)',
       paddingLeft: this.state.clicked ? '4px' : '60px'
