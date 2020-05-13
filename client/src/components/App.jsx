@@ -65,7 +65,7 @@ class App extends React.Component {
     };
 
     return (
-      <div className = "body" style={bodyStyle}>
+      <div className = "nav-videoSection" style={bodyStyle}>
         <div className='headerBox'>
           <Header />
         </div>

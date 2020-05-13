@@ -140,8 +140,6 @@ header{
   text-align: center;
 }
 
-
-
 .navListItem{
   display: inline;
   padding: 10px 15px 0 15px;
@@ -155,18 +153,10 @@ li:hover{
 }
 
 .navContainer{
-  padding: 10px 20px;
-  margin-right: 57px;
-}
-
-.rightHeader{
-  width: auto;
-  position: absolute;
-  right: 100px;
-  top: 55px;
-  margin-top: 0;
-  z-index: 2000;
-
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 340px;
 }
 
 .searchBar span {
