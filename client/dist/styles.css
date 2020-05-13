@@ -169,18 +169,6 @@ li:hover{
 
 }
 
-
-
-.searchBar{
-  text-align: center;
-  background-color: #000;
-  border-top: 1px solid #454545;
-  margin: 0;
-  height: 110px;
-  clear: both;
-  display: block;
-}
-
 .searchBar span {
   font-size: 20px;
 }

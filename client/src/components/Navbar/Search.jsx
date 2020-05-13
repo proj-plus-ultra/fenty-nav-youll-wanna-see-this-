@@ -75,10 +75,18 @@ class Search extends React.Component {
       padding: '30px'
     };
 
+    let searchBarStyle = {
+      textAlign: 'center',
+      backgroundColor: '#000',
+      borderTop: '1px solid #454545',
+      margin: '0',
+      height: '110px',
+      clear: 'both',
+    };
     if (this.state.searched) {
       return (
         <div className='searchWithResults'>
-          <div className='searchBar'>
+          <div className='searchBar' style={searchBarStyle}>
             <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
             <span className='butt' onClick={this.props.closeSearch}>X</span>
           </div>
@@ -95,7 +103,7 @@ class Search extends React.Component {
       );
     } else {
       return (
-        <div className='searchBar'>
+        <div className='searchBar' style={searchBarStyle}>
           <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick} className='searchBox'/>
           <span className='butt' onClick={this.props.closeSearch}>X</span>
         </div>
