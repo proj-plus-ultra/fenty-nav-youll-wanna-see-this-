@@ -43,7 +43,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getProducts();
+    //this.getProducts();
   }
 
   render() {

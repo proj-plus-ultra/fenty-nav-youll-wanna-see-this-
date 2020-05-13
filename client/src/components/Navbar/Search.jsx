@@ -63,7 +63,8 @@ class Search extends React.Component {
     let resultsStyle = {
       backgroundColor: 'white',
       color: '#000',
-      padding: '1px 50px 2px 110px'
+      padding: '1px 50px 2px 110px',
+      position: 'absolute'
     };
 
     let allStyle = {
@@ -85,7 +86,7 @@ class Search extends React.Component {
     };
     if (this.state.searched) {
       return (
-        <div className='searchWithResults'>
+        <div className='searchWithResults' style={{position: 'relative'}}>
           <div className='searchBar' style={searchBarStyle}>
             <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
             <span className='butt' onClick={this.props.closeSearch}>X</span>
