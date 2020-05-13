@@ -30,24 +30,20 @@ class App extends React.Component {
   }
 
   getYouTubeVideos(name) {
-
-    let param = {
-      key: this.props.API_KEY,
-      productName: this.state.current
-    };
-
-    getVideos(param, (results) =>{
-
-      this.setState({
-        videos: results.data.items
-      }, () => console.log('Retrieved Videos!', this.state.videos));
-
-    });
+    let nameToSearch = name;
+    console.log('Sending To Backend:', nameToSearch);
+    axios.get('/videos', {params: {productName: nameToSearch}})
+      .then((res) =>{
+        console.log('Sent request to backend and received:', res.data);
+        this.setState({
+          videos: res.data.items
+        }, () => console.log('Retrieved Videos!', this.state.videos));
+      })
+      .catch((err)=> console.error(err));
   }
 
   componentDidMount() {
-    //this.getProducts();
-
+    this.getProducts();
   }
 
   render() {
