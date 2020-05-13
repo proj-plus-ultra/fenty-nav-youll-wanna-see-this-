@@ -54,6 +54,9 @@ class Search extends React.Component {
 
 
   render() {
+    //https://stackoverflow.com/questions/2006134/float-a-div-above-page-content
+    //how to have a div appear over a page
+
     let style = {
       backgroundImage: this.state.clicked ? 'none' : 'url(https://feccapstone.s3-us-west-1.amazonaws.com/searchBox_Icon.png)',
       paddingLeft: this.state.clicked ? '4px' : '60px'
@@ -63,7 +66,8 @@ class Search extends React.Component {
     let resultsStyle = {
       backgroundColor: 'white',
       color: '#000',
-      padding: '1px 50px 2px 110px'
+      padding: '1px 50px 2px 110px',
+      position: 'absolute'
     };
 
     let allStyle = {
@@ -75,10 +79,18 @@ class Search extends React.Component {
       padding: '30px'
     };
 
+    let searchBarStyle = {
+      textAlign: 'center',
+      backgroundColor: '#000',
+      borderTop: '1px solid #454545',
+      margin: '0',
+      height: '110px',
+      clear: 'both',
+    };
     if (this.state.searched) {
       return (
-        <div className='searchWithResults'>
-          <div className='searchBar'>
+        <div className='searchWithResults' style={{position: 'relative'}}>
+          <div className='searchBar' style={searchBarStyle}>
             <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
             <span className='butt' onClick={this.props.closeSearch}>X</span>
           </div>
@@ -95,7 +107,7 @@ class Search extends React.Component {
       );
     } else {
       return (
-        <div className='searchBar'>
+        <div className='searchBar' style={searchBarStyle}>
           <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick} className='searchBox'/>
           <span className='butt' onClick={this.props.closeSearch}>X</span>
         </div>

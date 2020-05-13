@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import getVideos from '../scripts/getVideos.js';
+
 import Videos from './Videos.jsx';
 import Header from './Navbar/Header.jsx';
 
@@ -37,13 +37,13 @@ class App extends React.Component {
         console.log('Sent request to backend and received:', res.data);
         this.setState({
           videos: res.data.items
-        }, () => console.log('Retrieved Videos!', this.state.videos));
+        });
       })
       .catch((err)=> console.error(err));
   }
 
   componentDidMount() {
-    this.getProducts();
+    //this.getProducts();
   }
 
   render() {
@@ -65,7 +65,7 @@ class App extends React.Component {
     };
 
     return (
-      <div className = "body" style={bodyStyle}>
+      <div className = "nav-videoSection" style={bodyStyle}>
         <div className='headerBox'>
           <Header />
         </div>

@@ -27,7 +27,7 @@ class RightHeader extends React.Component {
     };
 
     return (
-      <div className='rightHeader'>
+      <div className='rightHeader' style={{paddingLeft: '100px'}}>
         <ul className='rightList' style={rightListStyle}>
           <li onClick={this.props.showSearch}><img src="https://feccapstone.s3-us-west-1.amazonaws.com/search_icon.png" border="0" className='search' style={searchStyle}/></li>
           <li><img src="https://feccapstone.s3-us-west-1.amazonaws.com/login-icon.png" alt="login-icon" border="0" className='actImg' style={{width: '25px',

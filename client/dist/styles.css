@@ -77,7 +77,6 @@ table {
 
 .buttonPlay,.thumbnail{
   cursor: pointer;
-
 }
 
 .buttonPlay:hover{
@@ -141,8 +140,6 @@ header{
   text-align: center;
 }
 
-
-
 .navListItem{
   display: inline;
   padding: 10px 15px 0 15px;
@@ -156,32 +153,10 @@ li:hover{
 }
 
 .navContainer{
-  padding: 10px 20px;
-  margin-right: 57px;
-}
-
-.rightHeader{
-  width: auto;
-  position: absolute;
-  right: 100px;
-  top: 55px;
-  margin-top: 0;
-  z-index: 2000;
-
-}
-
-li:hover{
-  text-decoration: underline;
-}
-
-.searchBar{
-  text-align: center;
-  background-color: #000;
-  border-top: 1px solid #454545;
-  margin: 0;
-  height: 110px;
-  clear: both;
-  display: block;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 340px;
 }
 
 .searchBar span {
@@ -206,10 +181,40 @@ li:hover{
 }
 
 
-
 .butt{
   margin-left: -30px;
   cursor: pointer;
   color: white;
 }
 
+.navListItem:hover{
+  text-decoration: underline;
+}
+
+.dd1:hover{
+  text-decoration: underline;
+}
+
+.faceElem:hover{
+  text-decoration: underline;
+}
+
+h3:hover{
+  text-decoration: underline;
+}
+
+.cheek:hover{
+  text-decoration: underline;
+}
+
+.lip:hover{
+  text-decoration: underline;
+}
+
+.ri-DD-list-one:hover,.ri-dd-list-two:hover,.ri-dd-list-three:hover{
+  text-decoration: underline;
+}
+
+h1:hover{
+  text-decoration: underline;
+}

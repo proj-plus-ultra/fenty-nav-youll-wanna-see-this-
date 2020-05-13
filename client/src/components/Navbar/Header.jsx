@@ -53,7 +53,7 @@ class Header extends React.Component {
       return (
         <div className='header' style={{positon: 'sticky', top: '0'}}>
           <header>
-            <div className='headerContainer' style={{padding: '20px 20px 20px 20px'}}>
+            <div className='headerContainer' style={{padding: '20px 20px 5px 20px'}}>
               <div className='logo'>
                 {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
@@ -73,7 +73,7 @@ class Header extends React.Component {
       return (
         <div className='header' style={{positon: 'sticky', top: '0'}}>
           <header>
-            <div className='headerContainer' style={{padding: '20px 20px 20px 20px'}}>
+            <div className='headerContainer' style={{padding: '20px 20px 5px 20px'}}>
               <div className='logo'>
                 {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
