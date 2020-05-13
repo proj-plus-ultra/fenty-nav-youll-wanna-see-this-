@@ -39,7 +39,7 @@ class shopDropdown extends React.Component {
 
         <div className='list-one' style={{position: 'relative', float: 'left', paddingLeft: '300px'}}>
 
-          <ul className='shopDD1' style={{}}>
+          <ul className='shopDD1'>
             {shop1.map((item, i) =>{
               return (
                 <li className='dd1' key={i} style={dd1Style}>{item}</li>
@@ -50,10 +50,10 @@ class shopDropdown extends React.Component {
 
 
         <div className = 'list-two' style={{position: 'relative', float: 'left', paddingLeft: '100px' }}>
-          <ul className='faceDD' style={{ }}>
+          <ul className='faceDD'>
             <li>
               <strong><h3 style={{paddingBottom: '15px'}}>FACE</h3></strong>
-              <ul>
+              <ul className='faceDD'>
                 {face.map((item, i) =>{
                   return (
                     <li className='faceElem' key={i} style={{fontSize: '10px', paddingBottom: '17px'}}>{item}</li>
