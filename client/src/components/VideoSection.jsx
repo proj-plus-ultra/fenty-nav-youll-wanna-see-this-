@@ -14,7 +14,7 @@ class VideoSection extends React.Component {
     this.getYouTubeVideos = this.getYouTubeVideos.bind(this);
   }
   getProducts() {
-    axios.get('/products')
+    axios.get('http://localhost:4201/products')
       .then((res) =>{
         console.log('Got Products!', res.data);
         let randomProduct = Math.floor(Math.random() * res.data.length);
@@ -28,8 +28,7 @@ class VideoSection extends React.Component {
 
   getYouTubeVideos(name) {
     let nameToSearch = name;
-    console.log('Sending To Backend:', nameToSearch);
-    axios.get('/videos', {params: {productName: nameToSearch}})
+    axios.get('http://localhost:4201/videos', {params: {productName: nameToSearch}})
       .then((res) =>{
         console.log('Sent request to backend and received:', res.data);
         this.setState({

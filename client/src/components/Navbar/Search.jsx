@@ -40,7 +40,7 @@ class Search extends React.Component {
     //search results show up as sooon as 1 character is entered
     let toQuery = this.state.query;
 
-    axios.get('/search', {params: {search: toQuery}})
+    axios.get('http://localhost:4201/search', {params: {search: toQuery}})
       .then((res) =>{
         console.log('Searched:', res.data);
         this.setState({
