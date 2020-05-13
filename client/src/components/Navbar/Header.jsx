@@ -29,9 +29,8 @@ class Header extends React.Component {
   }
 
   rihanaHover() {
-    console.log('Works');
 
-    this.setState({showRiRiDD: !this.state.showRiRiDD}, ()=>console.log(this.state.showRiRiDD));
+    this.setState({showRiRiDD: !this.state.showRiRiDD});
   }
 
   handleClick() {
