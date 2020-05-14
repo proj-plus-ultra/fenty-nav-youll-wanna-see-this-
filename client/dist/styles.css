@@ -224,3 +224,14 @@ h3:hover{
 h1:hover{
   text-decoration: underline;
 }
+
+.foot-holder{
+  display: grid;
+  height: 100%;
+}
+
+.foot{
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto
+}

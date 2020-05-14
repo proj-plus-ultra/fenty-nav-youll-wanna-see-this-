@@ -1,5 +1,5 @@
 const axios = require('axios');
-const KEY = process.env.KEY || require('./config.js');
+const KEY = process.env.KEY || require('./config.js').YOUTUBE_API_KEY;
 
 const searchYT = (productName, callback) =>{
   let split = productName.split(' ');
