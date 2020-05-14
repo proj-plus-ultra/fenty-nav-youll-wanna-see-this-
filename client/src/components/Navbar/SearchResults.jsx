@@ -15,7 +15,7 @@ const SearchResults = (props) =>{
   };
 
   return (
-    <table className='searchList' style={{borderCollapse: 'separate', borderSpacing: '0 40px', fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif'}}>
+    <table className='searchList' style={{borderCollapse: 'separate', borderSpacing: '0 40px', fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif', fontSize: '20px'}}>
       <tbody>
         <tr style={{cursor: 'pointer'}}>
           {rowOne.map((product, i) =>{
