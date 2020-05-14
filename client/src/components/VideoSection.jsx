@@ -39,7 +39,7 @@ class VideoSection extends React.Component {
   }
 
   componentDidMount() {
-    this.getProducts();
+    //this.getProducts();
   }
 
   render() {
@@ -50,8 +50,7 @@ class VideoSection extends React.Component {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-      zIndex: '-1',
-      position: 'fixed'
+
     };
 
     return (

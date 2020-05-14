@@ -17,6 +17,7 @@ class shopDropdown extends React.Component {
       width: '100%',
       position: 'absolute',
       backgroundColor: 'white',
+      zIndex: '9'
     };
 
     let dd1Style = {

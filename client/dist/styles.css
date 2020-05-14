@@ -49,6 +49,7 @@ table {
 }
 /* CSS Reset*/
 /* TODO: Move all css that can be in line to perspective components*/
+
 .footer{
   background-image: url(https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-FENTY-Library/default/dwe00ca532/footer/FOOTER_BG_6_19_17.jpg);
   position:absolute;
@@ -120,7 +121,6 @@ header{
   transition: all .5s ease;
   height: auto;
   top: 0;
-  z-index: 99;
   width: 100%;
 }
 
@@ -134,7 +134,7 @@ header{
 
 
 .logo{
-  z-index: 2000;
+
   position: relative;
   left: auto;
   text-align: center;
