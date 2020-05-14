@@ -26,7 +26,8 @@ class Video extends React.Component {
     let entryStyle = {
       height: '100%',
       minHeight: '1px',
-      width: '362px'
+      width: '362px',
+      paddingRight: '2px'
     };
     return (
 
@@ -34,7 +35,7 @@ class Video extends React.Component {
 
         <VideoPopup title={this.props.video.snippet.title} vidId = {this.props.video.id.videoId} isOpen={this.state.open} open={this.openModal} close={this.closeModal}/>
         <img src={buttonSource} className='buttonPlay'></img>
-        <img src={this.props.video.snippet.thumbnails.medium.url} className='thumbnail'></img>
+        <img src={this.props.video.snippet.thumbnails.medium.url} className='thumbnail' ></img>
         <div className='subtitle'>
           {this.props.video.snippet.title}
         </div>
