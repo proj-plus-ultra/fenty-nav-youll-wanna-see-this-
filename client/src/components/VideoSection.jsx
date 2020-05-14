@@ -50,8 +50,7 @@ class VideoSection extends React.Component {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-      zIndex: '',
-      position: 'fixed'
+
     };
 
     return (
