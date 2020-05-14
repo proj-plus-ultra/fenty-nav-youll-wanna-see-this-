@@ -43,7 +43,6 @@ app.use('/videos', (req, res) =>{
   console.log('Product Name:', productToSearch);
 
   searchYt(productToSearch, (results) =>{
-    console.log('Results from server:', results);
 
     res.status(202).send(results);
 
