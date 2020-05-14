@@ -14,7 +14,7 @@ const riDropDown = (props) =>{
     display: props.show ? 'block' : 'none',
     padding: '50px 20px 25px 10px',
     width: '100%',
-    position: 'absolute',
+    position: 'fixed',
     backgroundColor: 'white',
     fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif',
     letterSpacing: '2px',

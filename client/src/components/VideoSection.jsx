@@ -39,18 +39,15 @@ class VideoSection extends React.Component {
   }
 
   componentDidMount() {
-    //this.getProducts();
+    this.getProducts();
   }
 
   render() {
-
-    //z-index and position: fixed lets the drop down menu appear over the videos without conflicts
     let videoStyle = {
       backgroundImage: "url(https://feccapstone.s3-us-west-1.amazonaws.com/video_background.jpg)",
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-
     };
 
     return (
