@@ -50,7 +50,7 @@ class Header extends React.Component {
   render() {
     if (this.state.showSearchBar) {
       return (
-        <div className='header' style={{positon: 'sticky', top: '0'}}>
+        <div className='header' style={{top: '0'}}>
           <header>
             <div className='headerContainer' style={{padding: '20px 20px 5px 20px'}}>
               <div className='logo'>

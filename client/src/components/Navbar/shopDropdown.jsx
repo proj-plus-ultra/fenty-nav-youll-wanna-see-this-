@@ -15,7 +15,7 @@ class shopDropdown extends React.Component {
       letterSpacing: '2px',
       fontSize: '13px',
       width: '100%',
-      position: 'absolute',
+      position: 'fixed',
       backgroundColor: 'white',
       zIndex: '9'
     };

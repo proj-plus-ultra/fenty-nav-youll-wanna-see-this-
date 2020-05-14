@@ -48,7 +48,11 @@ table {
 	border-spacing: 0;
 }
 /* CSS Reset*/
-/* TODO: Move all css that can be in line to perspective components*/
+
+
+body{
+  margin-top: 100px;
+}
 
 .footer{
   background-image: url(https://www.fentybeauty.com/dw/image/v2/AAXW_PRD/on/demandware.static/-/Sites-FENTY-Library/default/dwe00ca532/footer/FOOTER_BG_6_19_17.jpg);
@@ -122,6 +126,8 @@ header{
   height: auto;
   top: 0;
   width: 100%;
+  position: fixed;
+  z-index: 9;
 }
 
 

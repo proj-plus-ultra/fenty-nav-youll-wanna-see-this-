@@ -67,8 +67,8 @@ class Search extends React.Component {
       backgroundColor: 'white',
       color: '#000',
       padding: '1px 50px 2px 110px',
-      position: 'absolute',
-      zIndex: '9'
+      position: 'relative',
+      zIndex: '8'
     };
 
     let allStyle = {
@@ -76,8 +76,7 @@ class Search extends React.Component {
       textDecoration: 'underline',
       borderTop: '1px solid black',
       backgroundColor: 'white',
-      color: 'black',
-      padding: '30px'
+      color: 'black'
     };
 
     let searchBarStyle = {
@@ -87,10 +86,15 @@ class Search extends React.Component {
       margin: '0',
       height: '110px',
       clear: 'both',
+      position: 'fixed',
+      width: '100%',
+      zIndex: '9'
     };
+
+
     if (this.state.searched) {
       return (
-        <div className='searchWithResults' style={{position: 'relative'}}>
+        <div className='searchWithResults' style={{position: 'fixed', width: '100%', zIndex: 9}}>
           <div className='searchBar' style={searchBarStyle}>
             <input type='text' style={style} value={this.state.query} onChange={this.handleSearch} onClick={this.handleClick}className='searchBox'></input>
             <span className='butt' onClick={this.props.closeSearch}>X</span>
