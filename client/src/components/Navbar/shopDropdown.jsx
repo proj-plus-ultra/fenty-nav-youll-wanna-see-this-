@@ -118,7 +118,9 @@ class shopDropdown extends React.Component {
           <img src='https://feccapstone.s3-us-west-1.amazonaws.com/shop-picture.jpg' style={{cursor: 'pointer'}}/>
           <h3 style={{paddingLeft: '25%'}}>NEW!</h3> <br/>
           <h3 style={{paddingLeft: '14%'}}>CHEEKS OUT</h3> <br/>
-          <h3 style={{paddingLeft: '8%'}}>FREESTYLE CREAM BLUSH</h3> <br/>
+          <div style={{textAlign: 'center'}}>
+            <h3 style={{paddingLeft: '8%'}}>FREESTYLE CREAM BLUSH</h3> <br/>
+          </div>
         </div>
       </div>
 
