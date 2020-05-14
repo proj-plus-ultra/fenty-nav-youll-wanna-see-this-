@@ -18,6 +18,7 @@ const riDropDown = (props) =>{
     backgroundColor: 'white',
     fontFamily: 'brown-regular,Questrial,Times,Arial,sans-serif',
     letterSpacing: '2px',
+    zIndex: '9'
 
   };
 

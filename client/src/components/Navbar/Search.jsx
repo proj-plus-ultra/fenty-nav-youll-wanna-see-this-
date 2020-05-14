@@ -67,7 +67,8 @@ class Search extends React.Component {
       backgroundColor: 'white',
       color: '#000',
       padding: '1px 50px 2px 110px',
-      position: 'absolute'
+      position: 'absolute',
+      zIndex: '9'
     };
 
     let allStyle = {
