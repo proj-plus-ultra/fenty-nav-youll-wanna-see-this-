@@ -1,16 +1,17 @@
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
+  host: 'db.cjd9cquxgjfw.us-west-2.rds.amazonaws.com',
+  port: '3306',
+  user: 'admin',
+  password: '12345678',
   database: 'fenty_nav_videos'
 
 });
 
 db.connect((err)=>{
   if (err) {
-    console.log('Error connecting to Database');
+    console.log('Error connecting to Database:', err);
   }
 
   db.query('USE fenty_nav_videos');
