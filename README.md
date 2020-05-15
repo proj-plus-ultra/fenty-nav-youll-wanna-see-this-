@@ -3,9 +3,11 @@
 HOW TO USE MY COMPONENT:
 
 1. npm install
-2. npm run schema (might need to change user and password in database/index.js)
-3. npm run seed
-4. control + c to exit database
-5. npm run build
-6. npm run start
-7. go to the link that appears in the terminal
+2. npm run schema
+3. The password is : 12345678
+5. /q to exit mysql
+6. npm run seed
+7. control + c to exit database
+8. npm run build
+9. npm run start
+10. go to the link that appears in the terminal
