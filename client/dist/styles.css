@@ -115,6 +115,7 @@ body{
 
 .container{
   width: 100%;
+  width: max-content;
 }
 
 header{
