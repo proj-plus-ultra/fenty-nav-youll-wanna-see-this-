@@ -6,11 +6,11 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "build": "webpack",
-    "schema": "mysql -u root < schema.sql",
+    "schema": "mysql -h db.cjd9cquxgjfw.us-west-2.rds.amazonaws.com -P 3306 -u admin -p",
     "seed": "node database/seed.js ",
     "test": "jest",
     "aws": "aws s3 sync client/dist s3://navvideo --acl public-read",
-    "deploy": "npm run build && npm run aws"
+    "deploy": "npm run build && npm run aws -w"
   },
   "repository": {
     "type": "git",
