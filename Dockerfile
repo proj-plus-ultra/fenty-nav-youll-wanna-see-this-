@@ -22,3 +22,8 @@ COPY . .
 #docker run --publish 4201:4201 fentyb
 #how i was able to get the container to connect to database/backened
 #--publish routes traffic from host(ie my app) to image
+
+#TO PUSH TO DOCKER HUB:
+#You have to tag it again
+#docker tag <tag on local machine> <dockerhub username>/<tagname to refer to when pushing>
+#Then push: docker push <dockerhub username>/<tag ypu just set up>
