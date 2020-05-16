@@ -1,5 +1,5 @@
 # Use the official image as a parent image.
-FROM node:current-slim
+FROM node:13-alpine
 
 # Set the working directory.
 WORKDIR /client/dist
@@ -19,7 +19,8 @@ CMD [ "npm", "start" ]
 # Copy the rest of your app's source code from your host to your image filesystem.
 COPY . .
 
-#docker run --publish 4201:4201 fentyb
+#HOW TO RUN IMAGE
+#docker run --publish 4201:4201 fentyb <change fentyb to tagname>
 #how i was able to get the container to connect to database/backened
 #--publish routes traffic from host(ie my app) to image
 
