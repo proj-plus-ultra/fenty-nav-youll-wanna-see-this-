@@ -74,7 +74,6 @@ class Header extends React.Component {
           <header>
             <div className='headerContainer' style={{padding: '20px 20px 5px 20px'}}>
               <div className='logo'>
-                {/*TODO: Change src to whatever/wherever the homepage is*/}
                 <a src='#'/>
                 <img src="https://feccapstone.s3-us-west-1.amazonaws.com/header.png" alt="fentybeauty-logo" border="0" className='logo-img'/>
               </div>
