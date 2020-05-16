@@ -8,7 +8,6 @@ const db = mysql.createConnection({
   user: 'admin',
   password: '12345678',
   database: 'fenty_nav_videos'
-
 });
 
 db.connect((err)=>{
