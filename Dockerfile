@@ -28,3 +28,6 @@ COPY . .
 #You have to tag it again
 #docker tag <tag on local machine> <dockerhub username>/<tagname to refer to when pushing>
 #Then push: docker push <dockerhub username>/<tag ypu just set up>
+
+
+#https://stackabuse.com/deploying-node-js-apps-to-aws-ec2-with-docker/
