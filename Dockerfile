@@ -31,3 +31,6 @@ COPY . .
 
 
 #https://stackabuse.com/deploying-node-js-apps-to-aws-ec2-with-docker/
+
+#Make sure to run npm run deploy every time i make changes
+#and update docker hub as well
