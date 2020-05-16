@@ -7,3 +7,12 @@ docker-compose*
 README.md
 LICENSE
 .vscode
+tests
+.eslintrc.js
+.eslintignore
+foo.js
+schema.sql
+amplify
+coverage
+src
+jest.config.js
