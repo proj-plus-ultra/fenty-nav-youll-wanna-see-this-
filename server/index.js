@@ -23,6 +23,7 @@ app.use('/products', (req, res) =>{
     if (err) {
       res.status(400).json(err);
     } else {
+      res.set('Cache-Control', 'max-age=31536000');
       res.status(200).json(results);
     }
   });
@@ -33,6 +34,7 @@ app.use('/search', (req, res) =>{
     if (err) {
       res.status(404).json(err);
     } else {
+      res.set('Cache-Control', 'max-age=31536000');
       res.status(201).json(results);
     }
   });
