@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
+const logger = require('log-timestamp');
 const db = require('../database/index.js');
 const dbHelpers = require('../database/dbHelpers.js');
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 app.use(morgan('dev'));
+
 
 //END POINTS//
 app.use('/products', (req, res) =>{
