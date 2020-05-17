@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
+const logger = require('log-timestamp');
 const db = require('../database/index.js');
 const dbHelpers = require('../database/dbHelpers.js');
 
@@ -17,12 +18,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 app.use(morgan('dev'));
 
+
 //END POINTS//
 app.use('/products', (req, res) =>{
   dbHelpers.getProducts((err, results) =>{
     if (err) {
       res.status(400).json(err);
     } else {
+      res.set('Cache-Control', 'max-age=31536000');
       res.status(200).json(results);
     }
   });
@@ -33,6 +36,7 @@ app.use('/search', (req, res) =>{
     if (err) {
       res.status(404).json(err);
     } else {
+      res.set('Cache-Control', 'max-age=31536000');
       res.status(201).json(results);
     }
   });

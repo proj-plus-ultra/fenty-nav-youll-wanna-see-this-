@@ -10,7 +10,7 @@
     "seed": "node database/seed.js ",
     "test": "jest",
     "aws": "aws s3 sync client/dist s3://navvideo --acl public-read",
-    "deploy": "npm run build && npm run aws -w"
+    "deploy": "npm run build && npm run aws"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "log-timestamp": "^0.3.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.3",
