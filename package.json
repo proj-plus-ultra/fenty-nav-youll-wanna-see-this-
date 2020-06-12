@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "build": "webpack",
-    "schema": "mysql -h db.cjd9cquxgjfw.us-west-2.rds.amazonaws.com -P 3306 -u admin -p < schema.sql",
+    "schema": "mysql  -u root < schema.sql",
     "seed": "node database/seed.js ",
     "test": "jest",
     "aws": "aws s3 sync client/dist s3://navvideo --acl public-read",
