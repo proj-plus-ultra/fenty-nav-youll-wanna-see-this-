@@ -3,10 +3,7 @@ const mysql = require('mysql');
 //https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.html
 
 const db = mysql.createConnection({
-  host: 'db.cjd9cquxgjfw.us-west-2.rds.amazonaws.com',
-  port: '3306',
-  user: 'admin',
-  password: '12345678',
+  user: 'root',
   database: 'fenty_nav_videos'
 });
 
